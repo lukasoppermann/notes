@@ -23,7 +23,7 @@
 
 ## Instructions
 
-Backofen vorheizen:
+**Backofen vorheizen:**
 Den Backofen auf 175 °C Umluft (190 °C Ober-/Unterhitze) vorheizen. Eine Gugelhupfform (Ø 24 cm) gründlich mit Butter einfetten und mit Mehl ausstreuen.
 
 Teig vorbereiten:
