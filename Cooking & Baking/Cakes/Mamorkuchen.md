@@ -21,7 +21,6 @@
 | Schokoladenflocken              | 100 g                              |
 | Bunter Zuckerstreu              | nach Belieben                      |
 
-
 ## Instructions
 
 Backofen vorheizen:
