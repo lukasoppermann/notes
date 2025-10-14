@@ -62,13 +62,13 @@
               <summary>{{ item.title }}</summary>
               <ul>
                 {% for child in item.children %}
-                  <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+                  <li><a href="{{ child.url | replace: '.md','' | relative_url }}">{{ child.title }}</a></li>
                 {% endfor %}
               </ul>
             </details>
           </li>
         {% else %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          <li><a href="{{ item.url | replace: '.md','' | relative_url }}">{{ item.title }}</a></li>
         {% endif %}
       {% endfor %}
       </ul>
