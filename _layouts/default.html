@@ -62,7 +62,7 @@
               <summary>{{ item.title }}</summary>
               <ul>
                 {% for child in item.children %}
-                  <li><a href="/{{ child.url }}">{{ child.title }}</a></li>
+                  <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
                 {% endfor %}
               </ul>
             </details>
