@@ -25,12 +25,14 @@
       </li>
     {% else %}
       {%- assign item_url = item.url | uri_escape | prepend: '/' | remove: '.html' | remove: '.md' | remove: '/index' | remove: 'index' | replace: '//','/' -%}
+      {% if item.title != "index" %}
       <li>
         <a href="{{ item.url | uri_escape | relative_url }}"
            {% if current_url == item_url %}class="active"{% endif %}>
-          {{ item.title }} :: {% if current_url == item_url %}active{% else %}not active{% endif %}
+          {{ item.title }}
         </a>
       </li>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </ul>

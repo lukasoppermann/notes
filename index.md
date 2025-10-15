@@ -43,26 +43,27 @@ title: Home
 }
 </style>
 
-# Welcome
-
-Browse by topic:
+# Browse by topic
 
 <div class="cards">
 {% assign nav = site.data.nav %}
 {% for folder in nav %}
   {% if folder.children %}
-    {% assign first = nil %}
+    {% assign first_file = nil %}
+    {% assign file_count = 0 %}
     {% for child in folder.children %}
-      {% if child.url %}
-        {% assign first = child %}
-        {% break %}
+      {% if child.url and child.title != "index" %}
+        {% assign file_count = file_count | plus: 1 %}
+        {% if first_file == nil %}
+          {% assign first_file = child %}
+        {% endif %}
       {% endif %}
     {% endfor %}
-    {% if first %}
-      <a class="card-link" href="{{ first.url | uri_escape | relative_url }}">
+    {% if file_count > 0 and first_file %}
+      <a class="card-link" href="{{ first_file.url | uri_escape | relative_url }}">
         <div class="card">
           <div class="card-title">{{ folder.title }}</div>
-          <div>{{ first.title | escape }}</div>
+          <div>{{ first_file.title | escape }}</div>
         </div>
       </a>
     {% endif %}
