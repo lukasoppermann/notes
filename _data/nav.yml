@@ -1,8 +1,324 @@
+- title: Cooking & Baking
+  children:
+  - title: Bread
+    children:
+    - title: Backen
+      url: Cooking & Baking/Bread/Backen
+    - title: Bauernbrot
+      url: Cooking & Baking/Bread/Bauernbrot
+    - title: Dinkelbrot 24h
+      url: Cooking & Baking/Bread/Dinkelbrot 24h
+    - title: Dreikornbrot 24h
+      url: Cooking & Baking/Bread/Dreikornbrot 24h
+    - title: Feierabend Brot
+      url: Cooking & Baking/Bread/Feierabend Brot
+    - title: General bread knowledge
+      url: Cooking & Baking/Bread/General bread knowledge
+    - title: Nullteige
+      url: Cooking & Baking/Bread/Nullteige
+    - title: Roggenbrot 1-Stufig
+      url: Cooking & Baking/Bread/Roggenbrot 1-Stufig
+    - title: Sauerteig Mischbrot
+      url: Cooking & Baking/Bread/Sauerteig Mischbrot
+    - title: Stockbrot
+      url: Cooking & Baking/Bread/Stockbrot
+    - title: Vollkorn Körnerbrot 24
+      url: Cooking & Baking/Bread/Vollkorn Körnerbrot 24
+    - title: Weizen-Mischbrot 24h
+      url: Cooking & Baking/Bread/Weizen-Mischbrot 24h
+    - title: Whole grain country sourdough (24h)
+      url: Cooking & Baking/Bread/Whole grain country sourdough (24h)
+  - title: Cakes
+    children:
+    - title: Cheese Cake (Lemon)
+      url: Cooking & Baking/Cakes/Cheese Cake (Lemon)
+    - title: Cheese cake filling (no-bake)
+      url: Cooking & Baking/Cakes/Cheese cake filling (no-bake)
+    - title: Chocolate (tempered)
+      url: Cooking & Baking/Cakes/Chocolate (tempered)
+    - title: Cream — Almond or Hazelnut
+      url: Cooking & Baking/Cakes/Cream — Almond or Hazelnut
+    - title: Cream — Pie Cream (no eggs)
+      url: Cooking & Baking/Cakes/Cream — Pie Cream (no eggs)
+    - title: Cream — Vanilla cream (pudding)
+      url: Cooking & Baking/Cakes/Cream — Vanilla cream (pudding)
+    - title: Creams
+      url: Cooking & Baking/Cakes/Creams
+    - title: Crust — Pâte Brise (savory)
+      url: Cooking & Baking/Cakes/Crust — Pâte Brise (savory)
+    - title: Crust — Pâte Sucrée
+      url: Cooking & Baking/Cakes/Crust — Pâte Sucrée
+    - title: Curd — Cherry or Berry
+      url: Cooking & Baking/Cakes/Curd — Cherry or Berry
+    - title: Curd — Rhubarb
+      url: Cooking & Baking/Cakes/Curd — Rhubarb
+    - title: Curds
+      url: Cooking & Baking/Cakes/Curds
+    - title: Fruit fillings
+      url: Cooking & Baking/Cakes/Fruit fillings
+    - title: Ganache
+      url: Cooking & Baking/Cakes/Ganache
+    - title: General — Cake & Pie
+      url: Cooking & Baking/Cakes/General — Cake & Pie
+    - title: Lemon Tart
+      url: Cooking & Baking/Cakes/Lemon Tart
+    - title: Mamorkuchen
+      url: Cooking & Baking/Cakes/Mamorkuchen
+    - title: Orange Tart
+      url: Cooking & Baking/Cakes/Orange Tart
+    - title: Sable Breton (Butter Cookies)
+      url: Cooking & Baking/Cakes/Sable Breton (Butter Cookies)
+    - title: Shortbread crust
+      url: Cooking & Baking/Cakes/Shortbread crust
+    - title: Tart & Pie Crusts
+      url: Cooking & Baking/Cakes/Tart & Pie Crusts
+    - title: Tarts
+      url: Cooking & Baking/Cakes/Tarts
+  - title: Cooking
+    children:
+    - title: Dänischer Rotkohl
+      url: Cooking & Baking/Cooking/Dänischer Rotkohl
+    - title: Foccacia
+      url: Cooking & Baking/Cooking/Foccacia
+    - title: Fresh Pasta
+      url: Cooking & Baking/Cooking/Fresh Pasta
+    - title: Kürbis-Eintopf
+      url: Cooking & Baking/Cooking/Kürbis-Eintopf
+    - title: Mittelalter Brei
+      url: Cooking & Baking/Cooking/Mittelalter Brei
+    - title: Pasta sauces
+      url: Cooking & Baking/Cooking/Pasta sauces
+    - title: Pizza 2 days
+      url: Cooking & Baking/Cooking/Pizza 2 days
+    - title: Pizza Overnight (better 72h)
+      url: Cooking & Baking/Cooking/Pizza Overnight (better 72h)
+    - title: Pizza
+      url: Cooking & Baking/Cooking/Pizza
+    - title: Spicy chickpeas
+      url: Cooking & Baking/Cooking/Spicy chickpeas
+    - title: Spicy Eggplant
+      url: Cooking & Baking/Cooking/Spicy Eggplant
+- title: Cooking and Baking
+  children:
+  - title: Bread
+    children:
+    - title: Backen
+      url: Cooking and Baking/Bread/Backen
+    - title: Bauernbrot
+      url: Cooking and Baking/Bread/Bauernbrot
+    - title: Dinkelbrot 24h
+      url: Cooking and Baking/Bread/Dinkelbrot 24h
+    - title: Dreikornbrot 24h
+      url: Cooking and Baking/Bread/Dreikornbrot 24h
+    - title: Feierabend Brot
+      url: Cooking and Baking/Bread/Feierabend Brot
+    - title: General bread knowledge
+      url: Cooking and Baking/Bread/General bread knowledge
+    - title: Nullteige
+      url: Cooking and Baking/Bread/Nullteige
+    - title: Roggenbrot 1-Stufig
+      url: Cooking and Baking/Bread/Roggenbrot 1-Stufig
+    - title: Sauerteig Mischbrot
+      url: Cooking and Baking/Bread/Sauerteig Mischbrot
+    - title: Stockbrot
+      url: Cooking and Baking/Bread/Stockbrot
+    - title: Vollkorn Körnerbrot 24
+      url: Cooking and Baking/Bread/Vollkorn Körnerbrot 24
+    - title: Weizen-Mischbrot 24h
+      url: Cooking and Baking/Bread/Weizen-Mischbrot 24h
+    - title: Whole grain country sourdough (24h)
+      url: Cooking and Baking/Bread/Whole grain country sourdough (24h)
+  - title: Cakes
+    children:
+    - title: Cheese Cake (Lemon)
+      url: Cooking and Baking/Cakes/Cheese Cake (Lemon)
+    - title: Cheese cake filling (no-bake)
+      url: Cooking and Baking/Cakes/Cheese cake filling (no-bake)
+    - title: Chocolate (tempered)
+      url: Cooking and Baking/Cakes/Chocolate (tempered)
+    - title: Cream — Almond or Hazelnut
+      url: Cooking and Baking/Cakes/Cream — Almond or Hazelnut
+    - title: Cream — Pie Cream (no eggs)
+      url: Cooking and Baking/Cakes/Cream — Pie Cream (no eggs)
+    - title: Cream — Vanilla cream (pudding)
+      url: Cooking and Baking/Cakes/Cream — Vanilla cream (pudding)
+    - title: Creams
+      url: Cooking and Baking/Cakes/Creams
+    - title: Crust — Pâte Brise (savory)
+      url: Cooking and Baking/Cakes/Crust — Pâte Brise (savory)
+    - title: Crust — Pâte Sucrée
+      url: Cooking and Baking/Cakes/Crust — Pâte Sucrée
+    - title: Curd — Cherry or Berry
+      url: Cooking and Baking/Cakes/Curd — Cherry or Berry
+    - title: Curd — Rhubarb
+      url: Cooking and Baking/Cakes/Curd — Rhubarb
+    - title: Curds
+      url: Cooking and Baking/Cakes/Curds
+    - title: Fruit fillings
+      url: Cooking and Baking/Cakes/Fruit fillings
+    - title: Ganache
+      url: Cooking and Baking/Cakes/Ganache
+    - title: General — Cake & Pie
+      url: Cooking and Baking/Cakes/General — Cake & Pie
+    - title: Lemon Tart
+      url: Cooking and Baking/Cakes/Lemon Tart
+    - title: Mamorkuchen
+      url: Cooking and Baking/Cakes/Mamorkuchen
+    - title: Orange Tart
+      url: Cooking and Baking/Cakes/Orange Tart
+    - title: Sable Breton (Butter Cookies)
+      url: Cooking and Baking/Cakes/Sable Breton (Butter Cookies)
+    - title: Shortbread crust
+      url: Cooking and Baking/Cakes/Shortbread crust
+    - title: Tart & Pie Crusts
+      url: Cooking and Baking/Cakes/Tart & Pie Crusts
+    - title: Tarts
+      url: Cooking and Baking/Cakes/Tarts
+  - title: Cooking
+    children:
+    - title: Dänischer Rotkohl
+      url: Cooking and Baking/Cooking/Dänischer Rotkohl
+    - title: Foccacia
+      url: Cooking and Baking/Cooking/Foccacia
+    - title: Fresh Pasta
+      url: Cooking and Baking/Cooking/Fresh Pasta
+    - title: Kürbis-Eintopf
+      url: Cooking and Baking/Cooking/Kürbis-Eintopf
+    - title: Mittelalter Brei
+      url: Cooking and Baking/Cooking/Mittelalter Brei
+    - title: Pasta sauces
+      url: Cooking and Baking/Cooking/Pasta sauces
+    - title: Pizza 2 days
+      url: Cooking and Baking/Cooking/Pizza 2 days
+    - title: Pizza Overnight (better 72h)
+      url: Cooking and Baking/Cooking/Pizza Overnight (better 72h)
+    - title: Pizza
+      url: Cooking and Baking/Cooking/Pizza
+    - title: Spicy chickpeas
+      url: Cooking and Baking/Cooking/Spicy chickpeas
+    - title: Spicy Eggplant
+      url: Cooking and Baking/Cooking/Spicy Eggplant
+- title: documents
+  children:
+  - title: Personal
+    children:
+    - title: Cooking & Baking
+      children:
+      - title: Bread
+        children:
+        - title: Backen
+          url: documents/Personal/Cooking & Baking/Bread/Backen
+        - title: Bauernbrot
+          url: documents/Personal/Cooking & Baking/Bread/Bauernbrot
+        - title: Dinkelbrot 24h
+          url: documents/Personal/Cooking & Baking/Bread/Dinkelbrot 24h
+        - title: Dreikornbrot 24h
+          url: documents/Personal/Cooking & Baking/Bread/Dreikornbrot 24h
+        - title: Feierabend Brot
+          url: documents/Personal/Cooking & Baking/Bread/Feierabend Brot
+        - title: General bread knowledge
+          url: documents/Personal/Cooking & Baking/Bread/General bread knowledge
+        - title: Nullteige
+          url: documents/Personal/Cooking & Baking/Bread/Nullteige
+        - title: Roggenbrot 1-Stufig
+          url: documents/Personal/Cooking & Baking/Bread/Roggenbrot 1-Stufig
+        - title: Sauerteig Mischbrot
+          url: documents/Personal/Cooking & Baking/Bread/Sauerteig Mischbrot
+        - title: Stockbrot
+          url: documents/Personal/Cooking & Baking/Bread/Stockbrot
+        - title: Vollkorn Körnerbrot 24
+          url: documents/Personal/Cooking & Baking/Bread/Vollkorn Körnerbrot 24
+        - title: Weizen-Mischbrot 24h
+          url: documents/Personal/Cooking & Baking/Bread/Weizen-Mischbrot 24h
+        - title: Whole grain country sourdough (24h)
+          url: documents/Personal/Cooking & Baking/Bread/Whole grain country sourdough
+            (24h)
+      - title: Cakes
+        children:
+        - title: Cheese Cake (Lemon)
+          url: documents/Personal/Cooking & Baking/Cakes/Cheese Cake (Lemon)
+        - title: Cheese cake filling (no-bake)
+          url: documents/Personal/Cooking & Baking/Cakes/Cheese cake filling (no-bake)
+        - title: Chocolate (tempered)
+          url: documents/Personal/Cooking & Baking/Cakes/Chocolate (tempered)
+        - title: Cream — Almond or Hazelnut
+          url: documents/Personal/Cooking & Baking/Cakes/Cream — Almond or Hazelnut
+        - title: Cream — Pie Cream (no eggs)
+          url: documents/Personal/Cooking & Baking/Cakes/Cream — Pie Cream (no eggs)
+        - title: Cream — Vanilla cream (pudding)
+          url: documents/Personal/Cooking & Baking/Cakes/Cream — Vanilla cream (pudding)
+        - title: Creams
+          url: documents/Personal/Cooking & Baking/Cakes/Creams
+        - title: Crust — Pâte Brise (savory)
+          url: documents/Personal/Cooking & Baking/Cakes/Crust — Pâte Brise (savory)
+        - title: Crust — Pâte Sucrée
+          url: documents/Personal/Cooking & Baking/Cakes/Crust — Pâte Sucrée
+        - title: Curd — Cherry or Berry
+          url: documents/Personal/Cooking & Baking/Cakes/Curd — Cherry or Berry
+        - title: Curd — Rhubarb
+          url: documents/Personal/Cooking & Baking/Cakes/Curd — Rhubarb
+        - title: Curds
+          url: documents/Personal/Cooking & Baking/Cakes/Curds
+        - title: Fruit fillings
+          url: documents/Personal/Cooking & Baking/Cakes/Fruit fillings
+        - title: Ganache
+          url: documents/Personal/Cooking & Baking/Cakes/Ganache
+        - title: General — Cake & Pie
+          url: documents/Personal/Cooking & Baking/Cakes/General — Cake & Pie
+        - title: Lemon Tart
+          url: documents/Personal/Cooking & Baking/Cakes/Lemon Tart
+        - title: Mamorkuchen
+          url: documents/Personal/Cooking & Baking/Cakes/Mamorkuchen
+        - title: Orange Tart
+          url: documents/Personal/Cooking & Baking/Cakes/Orange Tart
+        - title: Sable Breton (Butter Cookies)
+          url: documents/Personal/Cooking & Baking/Cakes/Sable Breton (Butter Cookies)
+        - title: Shortbread crust
+          url: documents/Personal/Cooking & Baking/Cakes/Shortbread crust
+        - title: Tart & Pie Crusts
+          url: documents/Personal/Cooking & Baking/Cakes/Tart & Pie Crusts
+        - title: Tarts
+          url: documents/Personal/Cooking & Baking/Cakes/Tarts
+      - title: Cooking
+        children:
+        - title: Dänischer Rotkohl
+          url: documents/Personal/Cooking & Baking/Cooking/Dänischer Rotkohl
+        - title: Foccacia
+          url: documents/Personal/Cooking & Baking/Cooking/Foccacia
+        - title: Fresh Pasta
+          url: documents/Personal/Cooking & Baking/Cooking/Fresh Pasta
+        - title: Kürbis-Eintopf
+          url: documents/Personal/Cooking & Baking/Cooking/Kürbis-Eintopf
+        - title: Mittelalter Brei
+          url: documents/Personal/Cooking & Baking/Cooking/Mittelalter Brei
+        - title: Pasta sauces
+          url: documents/Personal/Cooking & Baking/Cooking/Pasta sauces
+        - title: Pizza 2 days
+          url: documents/Personal/Cooking & Baking/Cooking/Pizza 2 days
+        - title: Pizza Overnight (better 72h)
+          url: documents/Personal/Cooking & Baking/Cooking/Pizza Overnight (better
+            72h)
+        - title: Pizza
+          url: documents/Personal/Cooking & Baking/Cooking/Pizza
+        - title: Spicy chickpeas
+          url: documents/Personal/Cooking & Baking/Cooking/Spicy chickpeas
+        - title: Spicy Eggplant
+          url: documents/Personal/Cooking & Baking/Cooking/Spicy Eggplant
+    - title: Snowboarding
+      children:
+      - title: Learning 2025
+        url: documents/Personal/Snowboarding/Learning 2025
+      - title: Snowboarding goggles
+        url: documents/Personal/Snowboarding/Snowboarding goggles
+      - title: Snowboarding
+        url: documents/Personal/Snowboarding/Snowboarding
+    - title: Rubics Cube
+      url: documents/Personal/Rubics Cube
 - title: Snowboarding
   children:
   - title: Learning 2025
-    url: /Snowboarding/Learning 2025.md
+    url: Snowboarding/Learning 2025
   - title: Snowboarding goggles
-    url: /Snowboarding/Snowboarding goggles.md
+    url: Snowboarding/Snowboarding goggles
   - title: Snowboarding
-    url: /Snowboarding/Snowboarding.md
+    url: Snowboarding/Snowboarding
