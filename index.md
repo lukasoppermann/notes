@@ -51,13 +51,21 @@ Browse by topic:
 {% assign nav = site.data.nav %}
 {% for folder in nav %}
   {% if folder.children %}
-    {% assign first = folder.children | where: "url" %}{% assign first = first[0] %}
-    <a class="card-link" href="{{ first.url | uri_escape | relative_url }}">
-      <div class="card">
-        <div class="card-title">{{ folder.title }}</div>
-        <div>{{ first.title | escape }}</div>
-      </div>
-    </a>
+    {% assign first = nil %}
+    {% for child in folder.children %}
+      {% if child.url %}
+        {% assign first = child %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if first %}
+      <a class="card-link" href="{{ first.url | uri_escape | relative_url }}">
+        <div class="card">
+          <div class="card-title">{{ folder.title }}</div>
+          <div>{{ first.title | escape }}</div>
+        </div>
+      </a>
+    {% endif %}
   {% endif %}
 {% endfor %}
 </div>
