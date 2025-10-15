@@ -4,12 +4,12 @@
     {% if item.children %}
       {% assign is_open = false %}
       {% for child in item.children %}
-        {% if child.url and current_url == (child.url | uri_escape) %}
+        {% if child.url and current_url == (child.url | uri_escape | prepend: '/') %}
           {% assign is_open = true %}
         {% endif %}
         {% if child.children %}
           {% for grandchild in child.children %}
-            {% if grandchild.url and current_url == (grandchild.url | uri_escape) %}
+            {% if grandchild.url and current_url == (grandchild.url | uri_escape | prepend: '/') %}
               {% assign is_open = true %}
             {% endif %}
           {% endfor %}
@@ -24,8 +24,8 @@
     {% else %}
       <li>
         <a href="{{ item.url | relative_url }}"
-           {% if current_url == (item.url | uri_escape) %}class="active"{% endif %}>
-          {{ item.title }} :: {{current_url}} == {{item.url | uri_escape}}
+           {% if current_url == (item.url | uri_escape | prepend: '/') %}class="active"{% endif %}>
+          {{ item.title }} :: {{current_url}} == {{item.url | uri_escape | prepend: '/'}}
         </a>
       </li>
     {% endif %}
