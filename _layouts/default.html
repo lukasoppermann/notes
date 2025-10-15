@@ -8,8 +8,54 @@
       body {
         margin: 0;
         font-family: sans-serif;
-        display: flex;
         min-height: 100vh;
+      }
+      header.header {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 2px 8px #0002;
+        padding: 0 1em;
+      }
+      .menu-icon {
+        display: none;
+        width: 32px;
+        height: 32px;
+        background: none;
+        border: none;
+        margin-right: 1em;
+        cursor: pointer;
+      }
+      .menu-icon span, .menu-icon span:before, .menu-icon span:after {
+        display: block;
+        background: #444;
+        height: 4px;
+        width: 28px;
+        border-radius: 2px;
+        position: relative;
+        transition: 0.2s all;
+      }
+      .menu-icon span:before, .menu-icon span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+      }
+      .menu-icon span:before { top: -9px; }
+      .menu-icon span:after { top: 9px; }
+
+      .header-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #222;
+        text-decoration: none;
+        line-height: 56px;
+      }
+      .sidebar-backdrop {
+        display: none;
       }
       nav.sidebar {
         background: #f5f5f5;
@@ -20,12 +66,59 @@
         border-right: 1px solid #ddd;
         height: 100vh;
         box-sizing: border-box;
+        position: fixed;
+        top: 56px; left: 0;
+        bottom: 0;
+        transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+        z-index: 101;
       }
       main.content {
         flex: 1;
         padding: 2em;
         max-width: 900px;
         margin: 0 auto;
+        margin-top: 56px;
+      }
+
+      @media (max-width: 700px) {
+        .menu-icon {
+          display: inline-block;
+        }
+        nav.sidebar {
+          /* Hidden by default on mobile */
+          transform: translateX(-110%);
+        }
+        nav.sidebar.open {
+          transform: translateX(0);
+        }
+        .sidebar-backdrop {
+          display: none;
+          position: fixed;
+          z-index: 100;
+          background: #0006;
+          top: 56px; left: 0; right: 0; bottom: 0;
+          animation: fadein 0.2s;
+        }
+        .sidebar-backdrop.active {
+          display: block;
+        }
+      }
+      @media (min-width: 701px) {
+        .menu-icon, .sidebar-backdrop {
+          display: none !important;
+        }
+        nav.sidebar {
+          position: fixed;
+          left: 0; top: 56px; bottom: 0;
+          transform: none !important;
+        }
+        main.content {
+          margin-left: 250px;
+        }
+      }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
       }
       details > summary {
         cursor: pointer;
@@ -47,24 +140,42 @@
         padding: 2px 6px;
         text-decoration: none;
       }
-      @media (max-width: 700px) {
-        nav.sidebar {
-          display: none;
-        }
-        main.content {
-          max-width: 100vw;
-          padding: 1em;
-        }
-      }
     </style>
   </head>
   <body>
-    <nav class="sidebar">
-      <h2><a href="{{ '/' | relative_url }}" style="color:inherit;text-decoration:none;">Notes</a></h2>
+    <header class="header">
+      <button class="menu-icon" id="sidebar-toggle" aria-label="Open menu">
+        <span></span>
+      </button>
+      <a class="header-title" href="{{ '/' | relative_url }}">Notes</a>
+    </header>
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+    <nav class="sidebar" id="sidebar">
       {% include nav_list.html items=site.data.nav %}
     </nav>
     <main class="content">
       {{ content }}
     </main>
+    <script>
+      // Sidebar open/close for mobile
+      const sidebar = document.getElementById('sidebar');
+      const toggle = document.getElementById('sidebar-toggle');
+      const backdrop = document.getElementById('sidebar-backdrop');
+      toggle && toggle.addEventListener('click', function() {
+        sidebar.classList.add('open');
+        backdrop.classList.add('active');
+      });
+      backdrop && backdrop.addEventListener('click', function() {
+        sidebar.classList.remove('open');
+        backdrop.classList.remove('active');
+      });
+      // Also close sidebar if ESC is pressed
+      document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape") {
+          sidebar.classList.remove('open');
+          backdrop.classList.remove('active');
+        }
+      });
+    </script>
   </body>
 </html>
