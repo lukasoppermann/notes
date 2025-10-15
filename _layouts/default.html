@@ -55,22 +55,29 @@
     <nav class="sidebar">
       <h2>{{ site.title }}</h2>
       <ul>
-      {% for item in site.data.nav %}
-        {% if item.children %}
-          <li>
-            <details>
-              <summary>{{ item.title }}</summary>
-              <ul>
-                {% for child in item.children %}
-                  <li><a href="{{ child.url | replace: '.md','' | relative_url }}">{{ child.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </details>
-          </li>
-        {% else %}
-          <li><a href="{{ item.url | replace: '.md','' | relative_url }}">{{ item.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+        {% assign nav_items = site.data.nav %}
+        {% capture recursive_nav %}
+        {% raw %}
+        {% macro nav_list items %}
+          {% for item in items %}
+            {% if item.children %}
+              <li>
+                <details>
+                  <summary>{{ item.title }}</summary>
+                  <ul>
+                    {{ nav_list(item.children) }}
+                  </ul>
+                </details>
+              </li>
+            {% else %}
+              <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endmacro %}
+        {{ nav_list(nav_items) }}
+        {% endraw %}
+        {% endcapture %}
+        {{ recursive_nav | liquify }}
       </ul>
     </nav>
     <main class="content">
