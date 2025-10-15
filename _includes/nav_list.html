@@ -1,31 +1,34 @@
 <ul>
-  {% assign current_url = page.url | replace: 'index.html','' | replace: '/index.md','' | replace: '.md','' | replace: '.html','' %}
+  {% assign current_url = page.url | remove: '.html' | remove: '.md' | remove: '/index' | remove: 'index' | replace: '//','/' %}
   {% for item in include.items %}
     {% if item.children %}
-      {% assign is_open = false %}
-      {% for child in item.children %}
-        {% if child.url and current_url == (child.url | uri_escape | prepend: '/') %}
-          {% assign is_open = true %}
-        {% endif %}
-        {% if child.children %}
-          {% for grandchild in child.children %}
-            {% if grandchild.url and current_url == (grandchild.url | uri_escape | prepend: '/') %}
-              {% assign is_open = true %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
+      {%- assign open = false -%}
+      {%- for child in item.children -%}
+        {%- assign child_url = child.url | uri_escape | prepend: '/' | remove: '.html' | remove: '.md' | remove: '/index' | remove: 'index' | replace: '//','/' -%}
+        {%- if current_url == child_url -%}
+          {%- assign open = true -%}
+        {%- endif -%}
+        {%- if child.children -%}
+          {%- for grandchild in child.children -%}
+            {%- assign grandchild_url = grandchild.url | uri_escape | prepend: '/' | remove: '.html' | remove: '.md' | remove: '/index' | remove: 'index' | replace: '//','/' -%}
+            {%- if current_url == grandchild_url -%}
+              {%- assign open = true -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endfor -%}
       <li>
-        <details{% if is_open %} open{% endif %}>
+        <details{% if open %} open{% endif %}>
           <summary>{{ item.title }}</summary>
           {% include nav_list.html items=item.children %}
         </details>
       </li>
     {% else %}
+      {%- assign item_url = item.url | uri_escape | prepend: '/' | remove: '.html' | remove: '.md' | remove: '/index' | remove: 'index' | replace: '//','/' -%}
       <li>
-        <a href="{{ item.url | relative_url }}"
-           {% if current_url == (item.url | uri_escape | prepend: '/') %}class="active"{% endif %}>
-          {{ item.title }} :: '{{current_url}}' == '{{item.url | uri_escape | prepend: '/'}}'
+        <a href="{{ item.url | uri_escape | relative_url }}"
+           {% if current_url == item_url %}class="active"{% endif %}>
+          {{ item.title }} :: {% if current_url == item_url %}active{% else %}not active{% endif %}
         </a>
       </li>
     {% endif %}
