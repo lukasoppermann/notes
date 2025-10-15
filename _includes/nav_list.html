@@ -1,14 +1,33 @@
 <ul>
+  {% assign current_url = page.url | replace: 'index.html','' | replace: '/index.md','' | replace: '.md','' | replace: '.html','' %}
   {% for item in include.items %}
     {% if item.children %}
+      {% assign is_open = false %}
+      {% for child in item.children %}
+        {% if child.url and current_url == (child.url | prepend: '/') %}
+          {% assign is_open = true %}
+        {% endif %}
+        {% if child.children %}
+          {% for grandchild in child.children %}
+            {% if grandchild.url and current_url == (grandchild.url | prepend: '/') %}
+              {% assign is_open = true %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
       <li>
-        <details>
+        <details{% if is_open %} open{% endif %}>
           <summary>{{ item.title }}</summary>
           {% include nav_list.html items=item.children %}
         </details>
       </li>
     {% else %}
-      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      <li>
+        <a href="{{ item.url | relative_url }}"
+           {% if current_url == (item.url | prepend: '/') %}class="active"{% endif %}>
+          {{ item.title }}
+        </a>
+      </li>
     {% endif %}
   {% endfor %}
 </ul>
