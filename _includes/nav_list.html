@@ -25,7 +25,7 @@
       <li>
         <a href="{{ item.url | relative_url }}"
            {% if current_url == (item.url | uri_escape | prepend: '/') %}class="active"{% endif %}>
-          {{ item.title }} :: {{current_url}} == {{item.url | uri_escape | prepend: '/'}}
+          {{ item.title }} :: '{{current_url}}' == '{{item.url | uri_escape | prepend: '/'}}'
         </a>
       </li>
     {% endif %}
