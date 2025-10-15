@@ -24,7 +24,7 @@
     {% else %}
       <li>
         <a href="{{ item.url | relative_url }}"
-           {% if current_url == (item.url) %}class="active"{% endif %}>
+           {% if current_url == (item.url) %}class="active"{% endif %} data="{{current_url}} {{item.url}}">
           {{ item.title }}
         </a>
       </li>
