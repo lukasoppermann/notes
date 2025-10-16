@@ -14,7 +14,7 @@ A personal notes website built with [Astro](https://astro.build) and automatical
 
 ### Prerequisites
 
-- Node.js 20 or higher
+- Node.js 20.x or higher
 - npm
 
 ### Getting Started
@@ -53,17 +53,12 @@ This site automatically deploys to Vercel when changes are pushed to the `main` 
 ### Setting up Vercel Deployment
 
 1. Create a new project in Vercel and link it to your GitHub repository
-2. Add the following secrets to your GitHub repository:
+2. Install the Vercel CLI: `npm install -g vercel`
+3. Link your project: `npx vercel link` (follow the prompts)
+4. Add the following secret to your GitHub repository:
    - `VERCEL_TOKEN`: Your Vercel API token (get it from https://vercel.com/account/tokens)
-   - `VERCEL_ORG_ID`: Your Vercel organization ID
-   - `VERCEL_PROJECT_ID`: Your Vercel project ID
 
-To find your `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID`:
-```bash
-npx vercel link
-```
-
-This will create a `.vercel/project.json` file with the IDs.
+The `.vercel/project.json` file created by `vercel link` contains your project configuration and will be used during deployment.
 
 ## Content Structure
 
