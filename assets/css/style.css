@@ -2,6 +2,12 @@
 @import "./header.css";
 @import "./card.css";
 
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  padding-top: var(--header-height, 56px);
+}
 .sidebar-backdrop {
   display: none;
 }
@@ -14,9 +20,10 @@ nav.sidebar {
   border-right: 1px solid #ddd;
   height: 100vh;
   box-sizing: border-box;
-  position: fixed;
-  top: 56px; left: 0;
-  bottom: 0;
+  /* position: fixed;
+  top: var(--header-height);
+  left: 0;
+  bottom: 0; */
   transition: transform 0.25s cubic-bezier(.4,0,.2,1);
   z-index: 101;
 }
@@ -25,7 +32,6 @@ main.content {
   padding: 2em;
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 56px;
 }
 
 @media (max-width: 700px) {
@@ -34,6 +40,10 @@ main.content {
   }
   nav.sidebar {
     /* Hidden by default on mobile */
+    position: fixed;
+    left: 0; 
+    top: 56px; 
+    bottom: 0;
     transform: translateX(-110%);
   }
   nav.sidebar.open {
@@ -56,12 +66,9 @@ main.content {
     display: none !important;
   }
   nav.sidebar {
-    position: fixed;
-    left: 0; top: 56px; bottom: 0;
+    /* position: fixed;
+    left: 0; top: 56px; bottom: 0; */
     transform: none !important;
-  }
-  main.content {
-    margin-left: 250px;
   }
 }
 @keyframes fadein {
@@ -81,10 +88,16 @@ nav.sidebar ul {
 nav.sidebar li {
   margin: 0.2em 0;
 }
+nav.sidebar a {
+  color: #0074d9;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+}
 nav.sidebar a.active {
   color: #fff;
   background: #0074d9;
   border-radius: 4px;
-  padding: 2px 6px;
   text-decoration: none;
 }
