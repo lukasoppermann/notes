@@ -1,5 +1,6 @@
 @import "./base.css";
 @import "./header.css";
+@import "./card.css";
 
 .sidebar-backdrop {
   display: none;
