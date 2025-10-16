@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync, existsSync } from 'fs';
+import { join, dirname, basename } from 'path';
+import { fileURLToPath } from 'url';
+import yaml from 'js-yaml';
+
+export function getStaticPaths() {
+  // Get all possible paths from nav.yml
+  function getAllPaths(items, paths = []) {
+    for (const item of items) {
+      if (item.url) {
+        paths.push(item.url);
+      }
+      if (item.children) {
+        getAllPaths(item.children, paths);
+      }
+    }
+    return paths;
+  }
+
+  // Read nav data during build time - use process.cwd() for build
+  const navPath = join(process.cwd(), '_data/nav.yml');
+  const navContent = readFileSync(navPath, 'utf8');
+  const navData = yaml.load(navContent);
+  
+  const allPaths = getAllPaths(navData);
+  
+  return allPaths.map(path => ({
+    params: { slug: path }
+  }));
+}
+
+const { slug } = Astro.params;
+
+// Decode the URL and find the markdown file - use process.cwd() for build
+const decodedSlug = decodeURIComponent(slug);
+const mdPath = join(process.cwd(), `${decodedSlug}.md`);
+
+let content = '';
+let title = basename(decodedSlug);
+
+if (existsSync(mdPath)) {
+  content = readFileSync(mdPath, 'utf8');
+} else {
+  throw new Error(`File not found: ${mdPath}`);
+}
+
+// Import markdown processor
+import { marked } from 'marked';
+
+const htmlContent = marked(content);
+---
+
+<Layout title={title}>
+  <article set:html={htmlContent} />
+</Layout>
