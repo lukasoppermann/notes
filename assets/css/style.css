@@ -19,12 +19,7 @@ nav.sidebar {
   padding: 1.5em 1em 1em 1em;
   overflow-y: auto;
   border-right: 1px solid #ddd;
-  height: 100vh;
   box-sizing: border-box;
-  /* position: fixed;
-  top: var(--header-height);
-  left: 0;
-  bottom: 0; */
   transition: transform 0.25s cubic-bezier(.4,0,.2,1);
   z-index: 101;
 }
