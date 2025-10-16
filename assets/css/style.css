@@ -1,6 +1,7 @@
 @import "./base.css";
 @import "./header.css";
 @import "./card.css";
+@import "./table.css";
 
 .layout {
   display: flex;
