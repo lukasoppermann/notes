@@ -3,6 +3,11 @@ import yaml from '@rollup/plugin-yaml';
 
 // https://astro.build/config
 export default defineConfig({
+  // Ensure proper routing for Vercel
+  trailingSlash: 'always',
+  build: {
+    format: 'directory'
+  },
   // Enable markdown support
   markdown: {
     shikiConfig: {

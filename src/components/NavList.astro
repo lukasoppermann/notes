@@ -9,7 +9,8 @@ function normalizeUrl(url) {
     .replace('.md', '')
     .replace('/index', '')
     .replace('index', '')
-    .replace('//', '/');
+    .replace(/\/+/g, '/')  // Replace multiple slashes with single slash
+    .replace(/\/$/, '');   // Remove trailing slash for comparison
 }
 
 const normalizedCurrent = normalizeUrl(currentPath);
@@ -48,7 +49,7 @@ const normalizedCurrent = normalizeUrl(currentPath);
         return (
           <li>
             <a 
-              href={`/${decodeURIComponent(item.url)}`}
+              href={`/${item.url}`}
               class={isActive ? 'active' : ''}
             >
               {item.title}

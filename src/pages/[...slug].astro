@@ -10,7 +10,8 @@ export function getStaticPaths() {
   function getAllPaths(items, paths = []) {
     for (const item of items) {
       if (item.url) {
-        paths.push(item.url);
+        // Decode the URL to get the actual path segments
+        paths.push(decodeURIComponent(item.url));
       }
       if (item.children) {
         getAllPaths(item.children, paths);
@@ -33,12 +34,11 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-// Decode the URL and find the markdown file - use process.cwd() for build
-const decodedSlug = decodeURIComponent(slug);
-const mdPath = join(process.cwd(), `${decodedSlug}.md`);
+// slug is already decoded, find the markdown file - use process.cwd() for build
+const mdPath = join(process.cwd(), `${slug}.md`);
 
 let content = '';
-let title = basename(decodedSlug);
+let title = basename(slug);
 
 if (existsSync(mdPath)) {
   content = readFileSync(mdPath, 'utf8');

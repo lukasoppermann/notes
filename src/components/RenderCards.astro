@@ -27,7 +27,7 @@ function processFolder(folder) {
   return (
     <>
       {result && result.fileCount > 0 && result.firstFile && (
-        <a class="card-link" href={`/${decodeURIComponent(result.firstFile.url)}`}>
+        <a class="card-link" href={`/${result.firstFile.url}`}>
           <div class="card">
             <div class="card-title">{result.folder.title}</div>
             <div>{result.firstFile.title}</div>
