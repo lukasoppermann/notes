@@ -48,7 +48,7 @@ const normalizedCurrent = normalizeUrl(currentPath);
         return (
           <li>
             <a 
-              href={`/${decodeURIComponent(item.url)}`}
+              href={`/${item.url}`}
               class={isActive ? 'active' : ''}
             >
               {item.title}
