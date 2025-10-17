@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import RenderCards from '../components/RenderCards.astro';
-import navData from '../../_data/nav.yml';
+import { buildNavigation } from '../utils/navigation';
+
+const navData = await buildNavigation();
 ---
 
 <Layout title="Home">

@@ -1,0 +1,35 @@
+---
+// Header component for the site
+---
+
+<header class="header">
+  <button class="menu-icon" id="sidebar-toggle" aria-label="Open menu">
+    <span></span>
+  </button>
+  <a class="header-title" href="/">Notes</a>
+</header>
+
+<script>
+  // Sidebar open/close for mobile
+  const sidebar = document.getElementById('sidebar');
+  const toggle = document.getElementById('sidebar-toggle');
+  const backdrop = document.getElementById('sidebar-backdrop');
+  
+  toggle && toggle.addEventListener('click', function() {
+    sidebar?.classList.toggle('open');
+    backdrop?.classList.toggle('active');
+  });
+  
+  backdrop && backdrop.addEventListener('click', function() {
+    sidebar?.classList.remove('open');
+    backdrop?.classList.remove('active');
+  });
+  
+  // Also close sidebar if ESC is pressed
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") {
+      sidebar?.classList.remove('open');
+      backdrop?.classList.remove('active');
+    }
+  });
+</script>

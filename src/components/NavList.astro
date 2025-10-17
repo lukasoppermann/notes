@@ -4,13 +4,29 @@ const { items = [], currentPath = '' } = Astro.props;
 // Helper function to normalize URL for comparison
 function normalizeUrl(url) {
   if (!url) return '';
-  return '/' + decodeURIComponent(url)
+  
+  // Decode first if needed
+  let normalized = url;
+  try {
+    normalized = decodeURIComponent(url);
+  } catch {
+    // If decoding fails, use as-is
+  }
+  
+  // Add leading slash if not present
+  if (!normalized.startsWith('/')) {
+    normalized = '/' + normalized;
+  }
+  
+  // Remove file extensions and index
+  normalized = normalized
     .replace('.html', '')
     .replace('.md', '')
     .replace('/index', '')
-    .replace('index', '')
     .replace(/\/+/g, '/')  // Replace multiple slashes with single slash
     .replace(/\/$/, '');   // Remove trailing slash for comparison
+  
+  return normalized;
 }
 
 const normalizedCurrent = normalizeUrl(currentPath);
