@@ -62,7 +62,7 @@ The `.vercel/project.json` file created by `vercel link` contains your project c
 
 ## Content Structure
 
-Content is organized in folders and referenced in `_data/nav.yml`. Markdown files are automatically converted to HTML pages during the build process.
+Content is organized in markdown files within `src/data/notes/`. The navigation is automatically generated from the folder structure during the build process. Simply add new markdown files in the appropriate folders, and they will be included in the navigation automatically.
 
 ## License
 
