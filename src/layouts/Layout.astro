@@ -1,6 +1,7 @@
 ---
 const { title = 'Notes' } = Astro.props;
 import { buildNavigation } from '../utils/navigation';
+import Header from '../components/Header.astro';
 import NavList from '../components/NavList.astro';
 import '../styles/style.css';
 
@@ -21,12 +22,7 @@ const currentPath = Astro.url.pathname;
   </head>
   <body>
     <div class="layout">
-      <header class="header">
-        <button class="menu-icon" id="sidebar-toggle" aria-label="Open menu">
-          <span></span>
-        </button>
-        <a class="header-title" href="/">Notes</a>
-      </header>
+      <Header />
       <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
       <nav class="sidebar" id="sidebar">
         <NavList items={navData} currentPath={currentPath} />
@@ -35,26 +31,5 @@ const currentPath = Astro.url.pathname;
         <slot />
       </main>
     </div>
-    <script>
-      // Sidebar open/close for mobile
-      const sidebar = document.getElementById('sidebar');
-      const toggle = document.getElementById('sidebar-toggle');
-      const backdrop = document.getElementById('sidebar-backdrop');
-      toggle && toggle.addEventListener('click', function() {
-        sidebar.classList.toggle('open');
-        backdrop.classList.toggle('active');
-      });
-      backdrop && backdrop.addEventListener('click', function() {
-        sidebar.classList.remove('open');
-        backdrop.classList.remove('active');
-      });
-      // Also close sidebar if ESC is pressed
-      document.addEventListener('keydown', function(e) {
-        if (e.key === "Escape") {
-          sidebar.classList.remove('open');
-          backdrop.classList.remove('active');
-        }
-      });
-    </script>
   </body>
 </html>
