@@ -1,55 +1,57 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { readFileSync, existsSync } from 'fs';
-import { join, dirname, basename } from 'path';
-import { fileURLToPath } from 'url';
-import yaml from 'js-yaml';
+import { marked } from 'marked';
+import { basename } from 'path';
+import { readdirSync, readFileSync, statSync } from 'fs';
+import { join } from 'path';
 
-export function getStaticPaths() {
-  // Get all possible paths from nav.yml
-  function getAllPaths(items, paths = []) {
+export async function getStaticPaths() {
+  const notesDir = join(process.cwd(), 'src/data/notes');
+  
+  // Recursively get all markdown files
+  function getAllMarkdownFiles(dir, baseDir = notesDir) {
+    const files = [];
+    const items = readdirSync(dir);
+    
     for (const item of items) {
-      if (item.url) {
-        // Decode the URL to get the actual path segments
-        paths.push(decodeURIComponent(item.url));
-      }
-      if (item.children) {
-        getAllPaths(item.children, paths);
+      const fullPath = join(dir, item);
+      const stat = statSync(fullPath);
+      
+      if (stat.isDirectory()) {
+        files.push(...getAllMarkdownFiles(fullPath, baseDir));
+      } else if (item.endsWith('.md')) {
+        // Get relative path from notes directory
+        const relativePath = fullPath.replace(baseDir + '/', '').replace('.md', '');
+        files.push({
+          slug: relativePath,
+          fullPath: fullPath,
+        });
       }
     }
-    return paths;
+    
+    return files;
   }
-
-  // Read nav data during build time - use process.cwd() for build
-  const navPath = join(process.cwd(), '_data/nav.yml');
-  const navContent = readFileSync(navPath, 'utf8');
-  const navData = yaml.load(navContent);
   
-  const allPaths = getAllPaths(navData);
+  const allFiles = getAllMarkdownFiles(notesDir);
   
-  return allPaths.map(path => ({
-    params: { slug: path }
+  return allFiles.map(file => ({
+    params: { slug: file.slug },
+    props: { 
+      filepath: file.fullPath
+    },
   }));
 }
 
+const { filepath } = Astro.props;
 const { slug } = Astro.params;
 
-// slug is already decoded, find the markdown file - use process.cwd() for build
-const mdPath = join(process.cwd(), `${slug}.md`);
+// Read the file content
+const content = readFileSync(filepath, 'utf-8');
 
-let content = '';
-let title = basename(slug);
-
-if (existsSync(mdPath)) {
-  content = readFileSync(mdPath, 'utf8');
-} else {
-  throw new Error(`File not found: ${mdPath}`);
-}
-
-// Import markdown processor
-import { marked } from 'marked';
-
+// Use marked to render markdown
 const htmlContent = marked(content);
+
+const title = basename(slug);
 ---
 
 <Layout title={title}>

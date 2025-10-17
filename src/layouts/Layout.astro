@@ -1,8 +1,11 @@
 ---
 const { title = 'Notes' } = Astro.props;
-import navData from '../../_data/nav.yml';
+import { buildNavigation } from '../utils/navigation';
 import NavList from '../components/NavList.astro';
 import '../styles/style.css';
+
+// Build navigation from content collection
+const navData = await buildNavigation();
 
 // Get current URL path for active state
 const currentPath = Astro.url.pathname;
