@@ -84,7 +84,7 @@ This is a personal notes website built with Astro and automatically deployed to 
   - Configures markdown rendering with GitHub Light theme
   - Integrates YAML plugin for Vite
 - **`package.json`**: Project dependencies and scripts
-- **`_config.yml`**: Jekyll configuration (legacy, may not be actively used)
+- **`_config.yml`**: Legacy Jekyll configuration file (not used by Astro; from previous Jekyll setup)
 - **`vercel.json`**: Vercel deployment configuration
 
 ## Testing
