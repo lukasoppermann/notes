@@ -1,0 +1,61 @@
+---
+const { items = [], currentPath = '' } = Astro.props;
+
+// Helper function to normalize URL for comparison
+function normalizeUrl(url) {
+  if (!url) return '';
+  return '/' + decodeURIComponent(url)
+    .replace('.html', '')
+    .replace('.md', '')
+    .replace('/index', '')
+    .replace('index', '')
+    .replace('//', '/');
+}
+
+const normalizedCurrent = normalizeUrl(currentPath);
+---
+
+<ul>
+  {items.map(item => {
+    if (item.children) {
+      // Check if this section should be open (has active child)
+      const hasActiveChild = item.children.some(child => {
+        const childUrl = normalizeUrl(child.url);
+        if (normalizedCurrent === childUrl) return true;
+        // Check grandchildren
+        if (child.children) {
+          return child.children.some(grandchild => {
+            const grandchildUrl = normalizeUrl(grandchild.url);
+            return normalizedCurrent === grandchildUrl;
+          });
+        }
+        return false;
+      });
+
+      return (
+        <li>
+          <details open={hasActiveChild}>
+            <summary>{item.title}</summary>
+            <Astro.self items={item.children} currentPath={currentPath} />
+          </details>
+        </li>
+      );
+    } else {
+      const itemUrl = normalizeUrl(item.url);
+      const isActive = normalizedCurrent === itemUrl;
+      
+      if (item.title !== "index") {
+        return (
+          <li>
+            <a 
+              href={`/${decodeURIComponent(item.url)}`}
+              class={isActive ? 'active' : ''}
+            >
+              {item.title}
+            </a>
+          </li>
+        );
+      }
+    }
+  })}
+</ul>

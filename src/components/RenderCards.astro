@@ -1,0 +1,42 @@
+---
+const { folders = [] } = Astro.props;
+
+// Recursive function to render cards
+function processFolder(folder) {
+  if (!folder.children) return null;
+  
+  let firstFile = null;
+  let fileCount = 0;
+  
+  for (const child of folder.children) {
+    if (child.url && child.title !== "index") {
+      fileCount++;
+      if (!firstFile) {
+        firstFile = child;
+      }
+    }
+  }
+  
+  return { folder, firstFile, fileCount };
+}
+---
+
+{folders.map(folder => {
+  const result = processFolder(folder);
+  
+  return (
+    <>
+      {result && result.fileCount > 0 && result.firstFile && (
+        <a class="card-link" href={`/${decodeURIComponent(result.firstFile.url)}`}>
+          <div class="card">
+            <div class="card-title">{result.folder.title}</div>
+            <div>{result.firstFile.title}</div>
+          </div>
+        </a>
+      )}
+      {folder.children && (
+        <Astro.self folders={folder.children} />
+      )}
+    </>
+  );
+})}
