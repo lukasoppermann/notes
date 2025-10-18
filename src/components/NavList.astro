@@ -29,6 +29,14 @@ function normalizeUrl(url) {
   return normalized;
 }
 
+// Helper function to URL-encode a path properly
+function encodeUrlPath(path) {
+  if (!path) return '';
+  // Split by '/', encode each segment, then join back
+  // This preserves the path structure while encoding special characters
+  return path.split('/').map(segment => encodeURIComponent(segment)).join('/');
+}
+
 const normalizedCurrent = normalizeUrl(currentPath);
 ---
 
@@ -65,7 +73,7 @@ const normalizedCurrent = normalizeUrl(currentPath);
         return (
           <li>
             <a 
-              href={`/${item.url}`}
+              href={`/${encodeUrlPath(item.url)}`}
               class={isActive ? 'active' : ''}
             >
               {item.title}
