@@ -4,9 +4,9 @@
 - **Pâte Sablée** biscuity crunchy base
 
 ## Tart rings
-- My tart rings are 12,5cm ~ 5inches
-- 40cm circumference
-- 3 tarts a 12,5cm = 1 tart a 22cm = 9inch
+- My tart rings are 12,5 cm ~ 5 inches
+- 40 cm circumference
+- 3 tarts a 12,5cm = 1 tart a 22 cm = 9 inch
 
 For a 3mm pie dough you need about 160g of dough per ring.
 Butter to insight of tart ring to make it sticky
