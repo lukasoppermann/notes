@@ -73,7 +73,7 @@ const normalizedCurrent = normalizeUrl(currentPath);
         return (
           <li>
             <a 
-              href={`/${encodeUrlPath(item.url)}`}
+              href={`/${encodeUrlPath(item.url)}/`}
               class={isActive ? 'active' : ''}
             >
               {item.title}
