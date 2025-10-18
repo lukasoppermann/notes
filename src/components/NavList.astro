@@ -70,10 +70,14 @@ const normalizedCurrent = normalizeUrl(currentPath);
       const isActive = normalizedCurrent === itemUrl;
       
       if (item.title !== "index") {
+        // Build URL with encoded path, ensuring proper leading/trailing slashes
+        const encodedPath = encodeUrlPath(item.url);
+        const href = `/${encodedPath}/`;
+        
         return (
           <li>
             <a 
-              href={`/${encodeUrlPath(item.url)}/`}
+              href={href}
               class={isActive ? 'active' : ''}
             >
               {item.title}
