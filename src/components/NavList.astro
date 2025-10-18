@@ -29,6 +29,14 @@ function normalizeUrl(url) {
   return normalized;
 }
 
+// Helper function to URL-encode a path properly
+function encodeUrlPath(path) {
+  if (!path) return '';
+  // Split by '/', encode each segment, then join back
+  // This preserves the path structure while encoding special characters
+  return path.split('/').map(segment => encodeURIComponent(segment)).join('/');
+}
+
 const normalizedCurrent = normalizeUrl(currentPath);
 ---
 
@@ -62,10 +70,14 @@ const normalizedCurrent = normalizeUrl(currentPath);
       const isActive = normalizedCurrent === itemUrl;
       
       if (item.title !== "index") {
+        // Build URL with encoded path, ensuring proper leading/trailing slashes
+        const encodedPath = encodeUrlPath(item.url);
+        const href = `/${encodedPath}/`;
+        
         return (
           <li>
             <a 
-              href={`/${item.url}`}
+              href={href}
               class={isActive ? 'active' : ''}
             >
               {item.title}
