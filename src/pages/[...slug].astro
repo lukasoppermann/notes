@@ -4,6 +4,7 @@ import { marked } from 'marked';
 import { basename } from 'path';
 import { readdirSync, readFileSync, statSync } from 'fs';
 import { join } from 'path';
+import { processObsidianTransclusions } from '../utils/obsidian.js';
 
 export async function getStaticPaths() {
   const notesDir = join(process.cwd(), 'src/data/notes');
@@ -57,8 +58,14 @@ const { slug } = Astro.params;
 // Read the file content
 const content = readFileSync(filepath, 'utf-8');
 
+// Get the notes directory
+const notesDir = join(process.cwd(), 'src/data/notes');
+
+// Process Obsidian transclusions
+const processedContent = processObsidianTransclusions(content, notesDir);
+
 // Use marked to render markdown
-const htmlContent = marked(content);
+const htmlContent = marked(processedContent);
 
 // Use original slug for title to preserve special characters
 const title = basename(originalSlug || slug);
