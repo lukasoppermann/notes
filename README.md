@@ -67,7 +67,9 @@ Content is organized in markdown files within `src/data/notes/`. The navigation 
 
 ### Obsidian Transclusion Syntax
 
-This site supports Obsidian's transclusion syntax for embedding content from other markdown files:
+This site supports two syntaxes for embedding content from other markdown files:
+
+#### Obsidian-Style Syntax
 
 **Embed a specific section:**
 ```markdown
@@ -79,12 +81,30 @@ This site supports Obsidian's transclusion syntax for embedding content from oth
 ![[Filename]]
 ```
 
+#### Markdown Link-Style Syntax
+
+**Embed an entire file:**
+```markdown
+![Description](Filename.md)
+```
+
+This syntax also supports URL-encoded filenames:
+```markdown
+![Cheese cake filling](Cheese%20cake%20filling%20(no-bake).md)
+```
+
+**Note:** Images are not affected. Only links to `.md` files are transcluded.
+
 **Example:**
 ```markdown
 ## Dark Chocolate Coating
 
 Cover it with dark chocolate
 ![[Chocolate (tempered)#Dark chocolate]]
+
+## Add Mascarpone Filling
+
+![Cheese cake filling](Cheese%20cake%20filling%20(no-bake).md)
 
 ## Lemon Curd Topping
 
@@ -96,6 +116,8 @@ The transclusion syntax will automatically:
 - Find the referenced file anywhere in the notes directory
 - Extract the specified section (case-insensitive heading match)
 - Include all content under that heading until the next heading of the same or higher level
+- Support URL-encoded filenames (spaces, parentheses, etc.)
+- Preserve image links (only `.md` files are transcluded)
 - Gracefully handle missing files or sections by leaving the original syntax in place
 
 ## License
