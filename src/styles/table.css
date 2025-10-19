@@ -1,7 +1,12 @@
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 1.5em;
   font-size: 1em;
 }
 th, td {
@@ -15,4 +20,16 @@ th {
 }
 tr:nth-child(even) {
   background: #f9f9f9;
+}
+
+figure {
+  margin: 0 0 1.5em 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

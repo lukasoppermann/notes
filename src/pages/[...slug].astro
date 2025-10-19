@@ -65,7 +65,15 @@ const notesDir = join(process.cwd(), 'src/data/notes');
 const processedContent = processObsidianTransclusions(content, notesDir);
 
 // Use marked to render markdown
-const htmlContent = marked(processedContent);
+let htmlContent = marked(processedContent);
+
+// Post-process the HTML to wrap tables in divs and images in figures
+// Wrap tables in div.table-wrapper
+htmlContent = htmlContent.replace(/<table>/g, '<div class="table-wrapper"><table>');
+htmlContent = htmlContent.replace(/<\/table>/g, '</table></div>');
+
+// Wrap standalone images in figure elements (but not those already in other elements)
+htmlContent = htmlContent.replace(/<p>(<img[^>]*>)<\/p>/g, '<figure>$1</figure>');
 
 // Use original slug for title to preserve special characters
 const title = basename(originalSlug || slug);
