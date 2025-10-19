@@ -1,6 +1,14 @@
 ---
 const { folders = [] } = Astro.props;
 
+// Helper function to URL-encode a path properly
+function encodeUrlPath(path) {
+  if (!path) return '';
+  // Split by '/', encode each segment, then join back
+  // This preserves the path structure while encoding special characters
+  return path.split('/').map(segment => encodeURIComponent(segment)).join('/');
+}
+
 // Recursive function to render cards
 function processFolder(folder) {
   if (!folder.children) return null;
@@ -27,7 +35,7 @@ function processFolder(folder) {
   return (
     <>
       {result && result.fileCount > 0 && result.firstFile && (
-        <a class="card-link" href={`/${result.firstFile.url}`}>
+        <a class="card-link" href={`/${encodeUrlPath(result.firstFile.url)}/`}>
           <div class="card">
             <div class="card-title">{result.folder.title}</div>
             <div>{result.firstFile.title}</div>
