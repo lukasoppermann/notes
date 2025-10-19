@@ -29,6 +29,18 @@ function normalizeUrl(url) {
   return normalized;
 }
 
+// Helper function to create URL-friendly path
+function encodeUrlPath(path) {
+  if (!path) return '';
+  // Replace em-dashes with regular hyphens and URL-encode the rest
+  return path.split('/').map(segment => {
+    // Replace em-dash with hyphen
+    const normalized = segment.replace(/—/g, '-');
+    // Then URL-encode
+    return encodeURIComponent(normalized);
+  }).join('/');
+}
+
 const normalizedCurrent = normalizeUrl(currentPath);
 ---
 
@@ -62,10 +74,14 @@ const normalizedCurrent = normalizeUrl(currentPath);
       const isActive = normalizedCurrent === itemUrl;
       
       if (item.title !== "index") {
+        // Build URL with encoded path, ensuring proper leading/trailing slashes
+        const encodedPath = encodeUrlPath(item.url);
+        const href = `/${encodedPath}/`;
+        
         return (
           <li>
             <a 
-              href={`/${item.url}`}
+              href={href}
               class={isActive ? 'active' : ''}
             >
               {item.title}

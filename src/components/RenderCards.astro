@@ -1,6 +1,18 @@
 ---
 const { folders = [] } = Astro.props;
 
+// Helper function to create URL-friendly path
+function encodeUrlPath(path) {
+  if (!path) return '';
+  // Replace em-dashes with regular hyphens and URL-encode the rest
+  return path.split('/').map(segment => {
+    // Replace em-dash with hyphen
+    const normalized = segment.replace(/—/g, '-');
+    // Then URL-encode
+    return encodeURIComponent(normalized);
+  }).join('/');
+}
+
 // Recursive function to render cards
 function processFolder(folder) {
   if (!folder.children) return null;
@@ -27,7 +39,7 @@ function processFolder(folder) {
   return (
     <>
       {result && result.fileCount > 0 && result.firstFile && (
-        <a class="card-link" href={`/${result.firstFile.url}`}>
+        <a class="card-link" href={`/${encodeUrlPath(result.firstFile.url)}/`}>
           <div class="card">
             <div class="card-title">{result.folder.title}</div>
             <div>{result.firstFile.title}</div>

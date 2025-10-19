@@ -34,15 +34,24 @@ export async function getStaticPaths() {
   
   const allFiles = getAllMarkdownFiles(notesDir);
   
-  return allFiles.map(file => ({
-    params: { slug: file.slug },
-    props: { 
-      filepath: file.fullPath
-    },
-  }));
+  // Create paths for both original slug and normalized slug (with em-dashes replaced)
+  const paths = [];
+  for (const file of allFiles) {
+    // Add the normalized slug (em-dashes replaced with hyphens)
+    const normalizedSlug = file.slug.replace(/—/g, '-');
+    paths.push({
+      params: { slug: normalizedSlug },
+      props: { 
+        filepath: file.fullPath,
+        originalSlug: file.slug
+      },
+    });
+  }
+  
+  return paths;
 }
 
-const { filepath } = Astro.props;
+const { filepath, originalSlug } = Astro.props;
 const { slug } = Astro.params;
 
 // Read the file content
@@ -51,7 +60,8 @@ const content = readFileSync(filepath, 'utf-8');
 // Use marked to render markdown
 const htmlContent = marked(content);
 
-const title = basename(slug);
+// Use original slug for title to preserve special characters
+const title = basename(originalSlug || slug);
 ---
 
 <Layout title={title}>
