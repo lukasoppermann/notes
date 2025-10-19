@@ -38,12 +38,12 @@ Total time: rest for 3,5h with stretch and folds in between
 - Let rest for 30min
 	- 4th Stretch and fold (~9 stretch and folds)
 - Let rest for 1h - 2h
-![](../../../../attachments/CleanShot%202025-05-30%20at%2021.58.39@2x.png)
+![](/images/CleanShot%202025-05-30%20at%2021.58.39@2x.png)
 ## 4. Preshape
 Dough should be buoyant and gassy.
 - Shape into ball and let it rest covered for 30 min
 
-![](../../../../attachments/CleanShot%202025-05-30%20at%2022.04.24@2x.png)
+![](/images/CleanShot%202025-05-30%20at%2022.04.24@2x.png)
 ## 5. Final shape & overnight ferment
 - Shape batard
 - Let cold ferment in fridge overnight

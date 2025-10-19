@@ -35,7 +35,7 @@ If you only want to fill half with apple compote, you need to add stacked apple 
 
 **Instructions**
 - Mix everything together in a bowl so that it is uniform and you don't see the white starch anymore
-	- ![](../../../../attachments/CleanShot%202024-07-06%20at%2021.47.30@2x.png)
+	- ![](/images/CleanShot%202024-07-06%20at%2021.47.30@2x.png)
 - Fill into pie crust
 - Put back into fridge while the lattice is being prepared
 - Cut lattice

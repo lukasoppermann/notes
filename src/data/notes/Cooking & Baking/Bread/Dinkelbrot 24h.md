@@ -21,7 +21,7 @@ Video: https://www.youtube.com/watch?v=cws4ICA5Ekg
 - Sauerteig (40g) und Wasser (100g / 30°C) in einer Schüssel vermischen.
 - Mehl (100g Dinkel 1050) dazugeben und gut verkneten.
 - Mit einer Gärfolie zudecken und für 8-12 Std. bei Raumtemperatur gären lassen, bis es sich etwa verdoppelt und blasen wirft
-  ![](../../../../attachments/CleanShot%202024-10-04%20at%2013.43.58@2x.png)
+  ![](/images/CleanShot%202024-10-04%20at%2013.43.58@2x.png)
 #### Brühstück
 - 150g Wasser aufkochen
 - Kochendes Wasser direkt über das Mehl (100g Dinkel Vollkorn) giessen und klumpenfrei mischen.

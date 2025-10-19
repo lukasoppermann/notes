@@ -26,14 +26,14 @@
 ### Instructions
 1. Sift all flour into bowl
 2. Add all cubed butter to bow
-3. Sanding squeeze the butter into small pieces, **but ONLY press with the tips of your fingers** ![](../../../../attachments/CleanShot%202024-12-07%20at%2010.42.46@2x%201.png)
+3. Sanding squeeze the butter into small pieces, **but ONLY press with the tips of your fingers** ![](/images/CleanShot%202024-12-07%20at%2010.42.46@2x%201.png)
 4. Once butter is small, sand it between your hands
-      ![](../../../../attachments/CleanShot%202024-12-07%20at%2010.43.55@2x%201.png)
-      In the end it should look like this: ![](../../../../attachments/CleanShot%202024-12-07%20at%2010.44.40@2x.png)
+      ![](/images/CleanShot%202024-12-07%20at%2010.43.55@2x%201.png)
+      In the end it should look like this: ![](/images/CleanShot%202024-12-07%20at%2010.44.40@2x.png)
 5. Mix all liquids together: Milk + egg yolk + pinch of salt + sugar + (optional vanilla powder & lemon zest)
 	   → Mix until sugar and salt are dissolved
-6. Add all liquid over flour mix and use spatula to hack up and down into the mix until the whole mixture starts to form a dough ![](../../../../attachments/CleanShot%202024-12-07%20at%2010.55.44@2x.png) ![](../../../../attachments/CleanShot%202024-12-07%20at%2010.56.02@2x.png)
-7. Put dough on work bench and press and slide 4 times ![](../../../../attachments/CleanShot%202024-12-07%20at%2010.57.15@2x.png)
+6. Add all liquid over flour mix and use spatula to hack up and down into the mix until the whole mixture starts to form a dough ![](/images/CleanShot%202024-12-07%20at%2010.55.44@2x.png) ![](/images/CleanShot%202024-12-07%20at%2010.56.02@2x.png)
+7. Put dough on work bench and press and slide 4 times ![](/images/CleanShot%202024-12-07%20at%2010.57.15@2x.png)
 8. Gather dough together, roll, into a ball and flatten. Wrap in plastic wrap
 
 ![[Tart & Pie Crusts#Baking]]

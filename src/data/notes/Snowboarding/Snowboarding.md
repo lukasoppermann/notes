@@ -4,8 +4,8 @@
 		- **Strap in while standing**
 			- Dig a platform with your snowboard so that you can safely stand on just the front foot
 				- **Better:** Push with your snowboard "heel" forward to create the platform
-				- ![](../../../attachments/CleanShot%202024-12-25%20at%2023.24.00@2x.png)
-				- ![](../../../attachments/CleanShot%202024-12-25%20at%2023.24.36.gif)
+				- ![](/images/CleanShot%202024-12-25%20at%2023.24.00@2x.png)
+				- ![](/images/CleanShot%202024-12-25%20at%2023.24.36.gif)
 			- Now clean back foot, place in binding and strap in
 		- **Skating**
 			- Press back foot against binding from the inside
@@ -13,7 +13,7 @@
 			- Put most weight on front foot
 			- Put back foot toe off board into snow to break
 		- **Riding T-Lift**
-			- ![](../../../attachments/Pasted%20image%2020240118151500.png)
+			- ![](/images/Pasted%20image%2020240118151500.png)
 			- front foot strapped in, back foot loose
 			- hold on the stick going into the rope (NOT T-part) with front hand (left hand) to keep your body aligned with direction of travel
 			- t between legs
@@ -21,7 +21,7 @@
 			- apply pressure to both heels to go into heel direction
 			- most of the time let your board guide you
 		- **Duck / Penguin walk for speed**
-			- ![](../../../attachments/CleanShot%202024-01-14%20at%2014.03.19.gif)
+			- ![](/images/CleanShot%202024-01-14%20at%2014.03.19.gif)
 	- **On a run**
 		- Knee steering
 			- Squish the bug for a toe turn
@@ -29,14 +29,14 @@
 		- Speed control in curves
 			- **Engage edge**
 				- Go down in your knees to press the edge into the snow, this creates friction, which makes you slow down
-				  ![](../../../attachments/Stop.gif)
+				  ![](/images/Stop.gif)
 			- **Large turns up the run**
 				- Making larger turns that go across or even partly up the run can help slow down again
 			- **Speed checks**
 				- quick, short breaking in between == board 90deg towards direction of travel
 			- **Edge pressure for speed**
 				- Go down by bending your knees and extend them to push pressure into your edge to pick up some speed
-				  ![](../../../attachments/CleanShot%202024-01-14%20at%2010.57.06@2x.png)
+				  ![](/images/CleanShot%202024-01-14%20at%2010.57.06@2x.png)
 		- **Gripped turn**
 			- drill to learn it: https://www.youtube.com/watch?v=F-fePL_zvZo
 		- **Carving**
@@ -88,36 +88,36 @@ Remember to initiate the next turn only when you've achieved a comfortable, cont
 ## Bindings
 
 ### Straps
-Tighten front strap on the front seam of the shoe  ![](../../../attachments/CleanShot%202024-01-11%20at%2013.28.34@2x.png)
+Tighten front strap on the front seam of the shoe  ![](/images/CleanShot%202024-01-11%20at%2013.28.34@2x.png)
 Adjust straps so that they are centered on / over your boots.
-![](../../../attachments/CleanShot%202024-01-11%20at%2014.24.04@2x.png)
+![](/images/CleanShot%202024-01-11%20at%2014.24.04@2x.png)
 Place the non-dominant foot (right / front foot) on the board to make sure the board does not slide around.
-![](../../../attachments/CleanShot%202024-01-11%20at%2014.25.42@2x.png)
+![](/images/CleanShot%202024-01-11%20at%2014.25.42@2x.png)
 - Tighten ankle strap first.
 ### Stance
 #### Width 
 - Jump from couch into snowboard stance and measure from mid of foot
 - Measure from bare foot to top of bend knee
-  ![](../../../attachments/CleanShot%202024-01-11%20at%2013.57.07@2x.png)
+  ![](/images/CleanShot%202024-01-11%20at%2013.57.07@2x.png)
 #### Angle
 - Positive angles are titled towards the nose
 - Negative ones towards the tail
 **Comfy beginner stance**
 - Front: +12
 - Back: -9
-![](../../../attachments/CleanShot%202024-01-11%20at%2013.57.56@2x.png)
+![](/images/CleanShot%202024-01-11%20at%2013.57.56@2x.png)
 
 **For free style**
 - Front: +15
 - Back: -15
-![](../../../attachments/CleanShot%202024-01-11%20at%2013.56.00@2x.png)
+![](/images/CleanShot%202024-01-11%20at%2013.56.00@2x.png)
 
 **For powder riding**
 - Front: +15
 - Back: 0
-![](../../../attachments/CleanShot%202024-01-11%20at%2013.54.34@2x.png)
+![](/images/CleanShot%202024-01-11%20at%2013.54.34@2x.png)
 
 **For carving**
 - Front: +18
 - Back: +6
-![](../../../attachments/CleanShot%202024-01-11%20at%2014.00.14@2x.png)
+![](/images/CleanShot%202024-01-11%20at%2014.00.14@2x.png)

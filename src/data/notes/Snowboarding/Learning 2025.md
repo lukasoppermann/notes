@@ -13,23 +13,23 @@ Stacked position over the board. Face facing the direction of travel. Use the fr
 1. make sure you can flat base for a couple of seconds, because it means the center of mass is perfect over the board. If an edge engages your body position is not centered.
 2. Toe turn from flatbase: **Bend knees** to press chins into front of boots
 	- Complete one turn so that you are cutting a cross the slope and come to a stop
-	   ![](../../../attachments/CleanShot%202025-01-01%20at%2022.34.13@2x.png)
+	   ![](/images/CleanShot%202025-01-01%20at%2022.34.13@2x.png)
 3. Heel turn from flatbase: Bend knees like sitting down, feel weight pushing down through heels
-	    ![](../../../attachments/CleanShot%202025-01-01%20at%2022.37.34@2x.png)
+	    ![](/images/CleanShot%202025-01-01%20at%2022.37.34@2x.png)
 4. Practice both turns with increasing speed
 5. Add **early edge change**
 	- Go into toe turn
 	- Once you go across slope (90deg to fall line)
 	- Get up into tall position and sink down into back position for a heel turn
 6. Keep linking turns by **moving center of mass up and over the board**
-	   ![](../../../attachments/CleanShot%202025-01-01%20at%2022.43.13.gif)
+	   ![](/images/CleanShot%202025-01-01%20at%2022.43.13.gif)
 ## Speed control using closed turns
 - **Engage edge**
 	- Go down in your knees to press the edge into the snow, this creates friction, which makes you slow down
-	  ![](../../../attachments/Stop.gif)
+	  ![](/images/Stop.gif)
 - **Large turns up the run**
 		- Making larger turns that go across or even partly up the run can help slow down again
-	  ![](../../../attachments/CleanShot%202024-01-14%20at%2010.57.06@2x.png)
+	  ![](/images/CleanShot%202024-01-14%20at%2010.57.06@2x.png)
 - **Speed checks**
 		- quick, short breaking in between == board 90deg towards direction of travel
 - **Edge pressure for speed**
@@ -38,29 +38,29 @@ Stacked position over the board. Face facing the direction of travel. Use the fr
 ## Strap in while standing
 - Dig a platform with your snowboard so that you can safely stand on just the front foot
 - **Better:** Push with your snowboard "heel" forward to create the platform
-	  ![](../../../attachments/CleanShot%202024-12-25%20at%2023.24.00@2x.png)![](../../../attachments/CleanShot%202024-12-25%20at%2023.24.36.gif)
+	  ![](/images/CleanShot%202024-12-25%20at%2023.24.00@2x.png)![](/images/CleanShot%202024-12-25%20at%2023.24.36.gif)
 	- Now clean back foot, place in binding and strap in
 
 ## Skating / Snowboarding with one foot
 
 ##### Speed up
 - To speed up, put back foot **behind** snowboard and push
-	  ![](../../../attachments/CleanShot%202025-01-01%20at%2022.04.07@2x.png)
+	  ![](/images/CleanShot%202025-01-01%20at%2022.04.07@2x.png)
 ##### Ride
 - Press back foot against binding from the inside
 - Make sure back foot is completely on the board
-	   ![](../../../attachments/CleanShot%202025-01-01%20at%2022.06.09@2x.png)
+	   ![](/images/CleanShot%202025-01-01%20at%2022.06.09@2x.png)
 - Put most weight on front foot
 ##### Break
 - Put back foot toe off board into snow to break
-  ![](../../../attachments/CleanShot%202025-01-01%20at%2022.08.02@2x.png)
+  ![](/images/CleanShot%202025-01-01%20at%2022.08.02@2x.png)
 # Refresher
 
 ## Good position
-![](../../../attachments/CleanShot%202025-01-02%20at%2013.12.19@2x.png)
+![](/images/CleanShot%202025-01-02%20at%2013.12.19@2x.png)
 - keep upper and lower body aligned
 - **to practice** hold on to your pants while riding
-	- ![](../../../attachments/CleanShot%202025-01-02%20at%2013.13.04@2x.png)
+	- ![](/images/CleanShot%202025-01-02%20at%2013.13.04@2x.png)
 
 ## Riding flats / catwalks
 - Keep edge engaged, but only a little bit.
@@ -70,7 +70,7 @@ Stacked position over the board. Face facing the direction of travel. Use the fr
 - Use need **knee steering to make turns** == 60% of your weight on the front foot
 - To **slow down** turn (best onto heel edge) and break a bit
 ## T-Lift
-![](../../../attachments/Pasted%20image%2020240118151500.png)
+![](/images/Pasted%20image%2020240118151500.png)
 - front foot strapped in, back foot loose
 - hold on the stick going into the rope (NOT T-part) with front hand (left hand) to keep your body aligned with direction of travel
 - t between legs

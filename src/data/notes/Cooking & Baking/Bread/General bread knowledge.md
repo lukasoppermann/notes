@@ -1,6 +1,6 @@
 ## General
 
-![](../../../../attachments/t6ztu528yzkc1.png)
+![](/images/t6ztu528yzkc1.png)
 
 #### Wheat sourdough
 - Temperature **MUST** stay below 28°C, if flour is weak (low protein) it should stay a lot lower.

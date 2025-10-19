@@ -43,7 +43,7 @@ When your oven is preheated, dimple the top of the dough all over with wet finge
 	- add 20% of sourdough weight as grams of water on top (e.g. 100g sourdough + 20g water to account for dry starter)
 - 470g lukewarm water (27°C to 37°C)
 	- Adjust water depending on flour is, you might need to add more water to get the wet dough consistency. So if your dough is dry, don’t be afraid to add more water.
-	  - ![](../../../../attachments/CleanShot%202024-07-04%20at%2009.43.31@2x.png)
+	  - ![](/images/CleanShot%202024-07-04%20at%2009.43.31@2x.png)
 - 15g salt
 - 15g honey
 - 1 tbsp (~15g) extra virgin olive oil, plus lots more for greasing the tray and drizzling

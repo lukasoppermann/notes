@@ -195,11 +195,11 @@ Variant 2:
 	1. Put eggs in bow
 	2. Add Nutmeg, salt, flour, milk and sugar
 	3. Mix everything thoroughly until it looks smooth
-	- ![](../../../../attachments/CleanShot%202024-06-28%20at%2023.37.58@2x.png)
+	- ![](/images/CleanShot%202024-06-28%20at%2023.37.58@2x.png)
 1. Fill fruits evenly in pie
 2. Slowly drizzle custard over fruits so that it spreads out evenly
-	- ![](../../../../attachments/CleanShot%202024-06-28%20at%2023.37.21@2x.png)
-	- ![](../../../../attachments/CleanShot%202024-06-28%20at%2023.38.55@2x.png)
+	- ![](/images/CleanShot%202024-06-28%20at%2023.37.21@2x.png)
+	- ![](/images/CleanShot%202024-06-28%20at%2023.38.55@2x.png)
 	- Lightly shake and tap to remove air bubbles
 	- Optionally add small butter blobs
 1. Preheat oven to 175°C

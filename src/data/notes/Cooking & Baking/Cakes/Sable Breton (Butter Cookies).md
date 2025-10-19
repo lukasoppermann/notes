@@ -19,11 +19,11 @@
 6. Add the egg yolk and the rest of the flour and mix until combined well
 7. The dough should look well combined without any lumps
 8. Place dough between two sheets of baking paper and roll to desired width (1.5–2cm for cookies)
-		![](../../../../attachments/Pasted%20image%2020250202163846.png)
+		![](/images/Pasted%20image%2020250202163846.png)
 9. Rest dough in fridge for at least 20 minutes
 10. Preheat oven to 180° (without fan) (& later bake for 10 to 12 minutes)
 11. Take out and cut out the cookies or use as tart crust
 	- If you do cookies, do an egg wash and make a hatch pattern with a fork by pressing in to the cookies 
-			![](../../../../attachments/Pasted%20image%2020250202164207.png)
+			![](/images/Pasted%20image%2020250202164207.png)
 12. Bake your Sables at 180°C for 10 to 12 minutes until they become golden.
-	![](../../../../attachments/Pasted%20image%2020250202164414.png)
+	![](/images/Pasted%20image%2020250202164414.png)

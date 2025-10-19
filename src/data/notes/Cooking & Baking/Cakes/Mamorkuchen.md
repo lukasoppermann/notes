@@ -1,4 +1,4 @@
-![](../../../../attachments/Pasted%20image%2020251014092631.png)
+![](/images/Pasted%20image%2020251014092631.png)
 
 ## Ingredients
 
