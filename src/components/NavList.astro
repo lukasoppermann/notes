@@ -29,12 +29,16 @@ function normalizeUrl(url) {
   return normalized;
 }
 
-// Helper function to URL-encode a path properly
+// Helper function to create URL-friendly path
 function encodeUrlPath(path) {
   if (!path) return '';
-  // Split by '/', encode each segment, then join back
-  // This preserves the path structure while encoding special characters
-  return path.split('/').map(segment => encodeURIComponent(segment)).join('/');
+  // Replace em-dashes with regular hyphens and URL-encode the rest
+  return path.split('/').map(segment => {
+    // Replace em-dash with hyphen
+    const normalized = segment.replace(/—/g, '-');
+    // Then URL-encode
+    return encodeURIComponent(normalized);
+  }).join('/');
 }
 
 const normalizedCurrent = normalizeUrl(currentPath);
