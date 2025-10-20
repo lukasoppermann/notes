@@ -26,6 +26,9 @@ function normalizeUrl(url) {
     .replace(/\/+/g, '/')  // Replace multiple slashes with single slash
     .replace(/\/$/, '');   // Remove trailing slash for comparison
   
+  // Replace em-dashes with hyphens for comparison (to match slug normalization)
+  normalized = normalized.replace(/—/g, '-');
+  
   return normalized;
 }
 
