@@ -1,7 +1,6 @@
 ---
 const { items = [], currentPath = '' } = Astro.props;
-console.log(currentPath)
-console.log("items", items)
+
 // Helper function to normalize URL for comparison
 function normalizeUrl(url) {
   if (!url) return '';
@@ -46,7 +45,6 @@ function encodeUrlPath(path) {
 }
 
 const normalizedCurrent = normalizeUrl(currentPath);
-console.log(normalizedCurrent)
 ---
 
 <ul>
