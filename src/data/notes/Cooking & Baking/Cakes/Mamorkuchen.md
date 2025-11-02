@@ -29,7 +29,8 @@ Den Backofen auf 175°C Umluft (190 °C Ober-/Unterhitze) vorheizen. Eine Gugelh
 
 **Teig vorbereiten:**
 Butter, Zucker, Salz und Vanille mit dem Handrührgerät oder in der Küchenmaschine schaumig schlagen (ca. 5min). 
-Nach und nach die Eier unterrühren, bis eine helle, cremige Masse entsteht.
+
+In einer neuen Schüssel Mehl, Speisenatron und Backpulver vermixen.
 
 Mehl und Milch zugeben:
 Mehl mit Backpulver mischen und abwechselnd mit der Milch in die Buttermasse einrühren. Die Teigkonsistenz sollte weich, aber nicht flüssig sein.
