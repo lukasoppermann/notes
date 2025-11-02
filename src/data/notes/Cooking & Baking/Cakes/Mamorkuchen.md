@@ -24,34 +24,35 @@
 
 ## Instructions
 
-**Backofen vorheizen:**
+### Backofen vorheizen
 Den Backofen auf 175°C Umluft (190 °C Ober-/Unterhitze) vorheizen. Eine Gugelhupfform (Ø 24 cm) gründlich mit Butter einfetten und mit Mehl ausstreuen.
 
-**Teig vorbereiten:**
-Butter, Zucker, Salz und Vanille mit dem Handrührgerät oder in der Küchenmaschine schaumig schlagen (ca. 5min). 
+### Hellen Teig vorbereiten
+1. Butter, Zucker, Prise salz und Vanille mit dem Handrührgerät oder in der Küchenmaschine schaumig schlagen (ca. 5min). 
+2. In einer neuen Schüssel Mehl, Speisenatron und Backpulver vermixen.
+3. Ei mit dem Eigelb verquirlen. Danach die Eier bei niedriger stufe in den Buttermix einarbeiten.
+4. Mehl und Buttermilch in drei Etappen hinzufügen und vermischen.
 
-In einer neuen Schüssel Mehl, Speisenatron und Backpulver vermixen.
+### Schoko-Teig vorbereiten
+1. 430g vom hellen Teig in eine zweite Schüssel für den Schoko-Teig abfüllen
+2. 70g Schokolade schmelzen, leicht abkühlen und mit Kakaopulver vermischen
+3. Schoko-Kakao-Mischung untern den teig heben
 
-Mehl und Milch zugeben:
-Mehl mit Backpulver mischen und abwechselnd mit der Milch in die Buttermasse einrühren. Die Teigkonsistenz sollte weich, aber nicht flüssig sein.
+### Zusammenfügen
+1. In die Backform mehrere Kleckse helle Teig geben (Abstand zwischendrin)
+2. In die Zwischenräume Schoko-Teig geben
+3. So weiter schichten bis aller teig verbraucht ist
+4. Für Mamor-Effekt Holzspieß spiralförmig furch den Teig ziehen
+5. Teig-Oberfläche glätten und Kuchen für 30 min im Ofen backen
+6. Temperatur auf 170°C reduzieren und die Form im Ofen drehen
+7. Weiter 10-15 min backen
+8. **Garprobe:** Holzspieß mittig einstechen, wenn er sauber raus kommt, ist der Kuchen gut.
+9. Kuchen 15 min in der Form ruhen lassen
+10. Auf Gitter stürzen und 1h 30 min auskühlen lassen
+### Dekorieren
+Schokolade schmelzen, Kuchen bestreichen und mit bunten Streuseln bestreuen.
 
-Teig teilen:
-Vom hellen Teig etwa 1/3 (ca. 300 g) abnehmen und in eine zweite Schüssel geben.
-
-Schokoladenmasse herstellen:
-Die Schokolade mit der Milch über einem Wasserbad schmelzen, dann das Kakaopulver einrühren, bis eine glatte Masse entsteht. Diese Mischung unter den kleineren Teil des Teigs rühren.
-
-Teig schichten:
-Abwechselnd hellen und dunklen Teig in die vorbereitete Form geben. Mit einer Gabel spiralförmig durch den Teig ziehen, um das typische Marmormuster zu erzeugen.
-
-Backen:
-Den Kuchen auf der mittleren Schiene etwa 50–60 Minuten backen (Stäbchenprobe).
-
-Abkühlen:
-Den Kuchen 10 Minuten in der Form auskühlen lassen, dann vorsichtig stürzen und vollständig auskühlen lassen.
-
-Dekorieren:
-Mit Schokoladenflocken und buntem Zuckerstreu bestreuen.
+![[Chocolate (tempered)#Dark chocolate]]
 
 ## Hinweise
 1. Der Kuchen lässt sich sehr gut einfrieren.
