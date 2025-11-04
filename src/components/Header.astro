@@ -1,12 +1,13 @@
 ---
 // Header component for the site
+import styles from './Header.module.css';
 ---
 
-<header class="header">
-  <button class="menu-icon" id="sidebar-toggle" aria-label="Open menu">
+<header class={styles.header}>
+  <button class={styles.menuIcon} id="sidebar-toggle" aria-label="Open menu">
     <span></span>
   </button>
-  <a class="header-title" href="/">Notes</a>
+  <a class={styles.headerTitle} href="/">Notes</a>
 </header>
 
 <script>

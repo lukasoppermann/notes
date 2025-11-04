@@ -1,5 +1,6 @@
 ---
 const { folders = [] } = Astro.props;
+import styles from './Card.module.css';
 
 // Helper function to create URL-friendly path
 function encodeUrlPath(path) {
@@ -39,9 +40,9 @@ function processFolder(folder) {
   return (
     <>
       {result && result.fileCount > 0 && result.firstFile && (
-        <a class="card-link" href={`/${encodeUrlPath(result.firstFile.url)}/`}>
-          <div class="card">
-            <div class="card-title">{result.folder.title}</div>
+        <a class={styles.cardLink} href={`/${encodeUrlPath(result.firstFile.url)}/`}>
+          <div class={styles.card}>
+            <div class={styles.cardTitle}>{result.folder.title}</div>
             <div>{result.firstFile.title}</div>
           </div>
         </a>

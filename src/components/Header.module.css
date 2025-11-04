@@ -1,7 +1,8 @@
 :root {
   --header-height: 56px;
 }
-header.header {
+
+.header {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 900;
@@ -12,7 +13,8 @@ header.header {
   box-shadow: 0 2px 8px #0002;
   padding: 0 1em;
 }
-.menu-icon {
+
+.menuIcon {
   display: none;
   width: 32px;
   height: 32px;
@@ -21,7 +23,10 @@ header.header {
   margin-right: 1em;
   cursor: pointer;
 }
-.menu-icon span, .menu-icon span:before, .menu-icon span:after {
+
+.menuIcon span,
+.menuIcon span:before,
+.menuIcon span:after {
   display: block;
   background: #444;
   height: 4px;
@@ -30,23 +35,33 @@ header.header {
   position: relative;
   transition: 0.2s all;
 }
-.menu-icon span:before, .menu-icon span:after {
+
+.menuIcon span:before,
+.menuIcon span:after {
   content: "";
   position: absolute;
   left: 0;
 }
-.menu-icon span:before { top: -9px; }
-.menu-icon span:after { top: 9px; }
 
-.header-title {
+.menuIcon span:before { top: -9px; }
+.menuIcon span:after { top: 9px; }
+
+.headerTitle {
   font-size: 1.5em;
   font-weight: bold;
   color: #222;
   text-decoration: none;
   line-height: 56px;
 }
+
 @media (min-width: 768px) {
-  .menu-icon, .sidebar-backdrop {
+  .menuIcon {
     display: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .menuIcon {
+    display: inline-block;
   }
 }

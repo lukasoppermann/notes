@@ -1,0 +1,30 @@
+.navList {
+  list-style: none;
+  padding-left: 1em;
+  margin: 0;
+}
+
+.navList li {
+  margin: 0.2em 0;
+}
+
+.navList a {
+  color: #0074d9;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+}
+
+.navList a.active {
+  color: #fff;
+  background: #0074d9;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.navList details > summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
