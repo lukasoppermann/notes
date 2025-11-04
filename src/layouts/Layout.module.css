@@ -44,7 +44,7 @@
     transform: translateX(-110%);
   }
   
-  .sidebar.open {
+  .sidebar:global(.open) {
     transform: translateX(0);
   }
   
@@ -57,7 +57,7 @@
     animation: fadein 0.2s;
   }
   
-  .sidebarBackdrop.active {
+  .sidebarBackdrop:global(.active) {
     display: block;
   }
 }

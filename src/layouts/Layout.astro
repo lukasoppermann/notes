@@ -25,8 +25,8 @@ const currentPath = Astro.url.pathname;
   <body>
     <div class={styles.layout}>
       <Header />
-      <div class={styles.sidebarBackdrop} id="sidebar-backdrop"></div>
-      <nav class={styles.sidebar} id="sidebar">
+      <div class={styles.sidebarBackdrop} data-sidebar-backdrop></div>
+      <nav class={styles.sidebar} data-sidebar>
         <NavList items={navData} currentPath={currentPath} />
       </nav>
       <main class={styles.content}>
