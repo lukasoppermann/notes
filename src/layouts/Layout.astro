@@ -3,7 +3,9 @@ const { title = 'Notes' } = Astro.props;
 import { buildNavigation } from '../utils/navigation';
 import Header from '../components/Header.astro';
 import NavList from '../components/NavList.astro';
-import '../styles/style.css';
+import styles from './Layout.module.css';
+import '../styles/base.css';
+import '../styles/table.css';
 
 // Build navigation from content collection
 const navData = await buildNavigation();
@@ -21,13 +23,13 @@ const currentPath = Astro.url.pathname;
     <meta name="robots" content="noindex, nofollow">
   </head>
   <body>
-    <div class="layout">
+    <div class={styles.layout}>
       <Header />
-      <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
-      <nav class="sidebar" id="sidebar">
+      <div class={styles.sidebarBackdrop} id="sidebar-backdrop"></div>
+      <nav class={styles.sidebar} id="sidebar">
         <NavList items={navData} currentPath={currentPath} />
       </nav>
-      <main class="content">
+      <main class={styles.content}>
         <slot />
       </main>
     </div>

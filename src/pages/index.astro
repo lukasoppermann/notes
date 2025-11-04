@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import RenderCards from '../components/RenderCards.astro';
 import { buildNavigation } from '../utils/navigation';
+import styles from '../components/Card.module.css';
 
 const navData = await buildNavigation();
 ---
@@ -9,7 +10,7 @@ const navData = await buildNavigation();
 <Layout title="Home">
   <h1>Browse by topic</h1>
 
-  <div class="cards">
+  <div class={styles.cards}>
     <RenderCards folders={navData} />
   </div>
 </Layout>
