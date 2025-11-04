@@ -2,4 +2,6 @@ body {
   margin: 0;
   font-family: sans-serif;
   min-height: 100vh;
+  background-color: var(--bgColor-default);
+  color: var(--fgColor-default);
 }

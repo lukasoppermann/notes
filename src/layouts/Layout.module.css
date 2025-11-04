@@ -1,3 +1,13 @@
+<<<<<<< HEAD:src/layouts/Layout.module.css
+=======
+@import "./light.theme.css";
+@import "./dark.theme.css";
+@import "./base.css";
+@import "./header.css";
+@import "./card.css";
+@import "./table.css";
+
+>>>>>>> bffcd5b (themeing):src/styles/style.css
 .layout {
   display: flex;
   min-height: 100vh;
