@@ -9,9 +9,10 @@
   height: var(--header-height);
   display: flex;
   align-items: center;
-  background: #fff;
+  background: var(--bgColor-default);
   box-shadow: 0 2px 8px #0002;
   padding: 0 1em;
+  border-bottom: 1px solid var(--borderColor-default);
 }
 
 .menuIcon {
@@ -28,7 +29,7 @@
 .menuIcon span:before,
 .menuIcon span:after {
   display: block;
-  background: #444;
+  background: var(--fgColor-default);
   height: 4px;
   width: 28px;
   border-radius: 2px;
@@ -49,7 +50,7 @@
 .headerTitle {
   font-size: 1.5em;
   font-weight: bold;
-  color: #222;
+  color: var(--fgColor-default);
   text-decoration: none;
   line-height: 56px;
 }
