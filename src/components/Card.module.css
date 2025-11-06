@@ -6,8 +6,8 @@
 }
 
 .card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--bgColor-default);
+  border: 1px solid var(--borderColor-default);
   border-radius: 8px;
   box-shadow: 0 2px 8px #0001;
   padding: 1.5em;
@@ -24,7 +24,7 @@
 
 .card:hover {
   box-shadow: 0 4px 16px #0002;
-  background: #e8f5ff;
+  background: var(--bgColor-muted);
 }
 
 .cardTitle {

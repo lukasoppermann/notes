@@ -1,6 +1,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bgColor-default: #000000;
+    --bgColor-muted: #1C1C1E;
+    --borderColor-default: #2C2C2E;
     --fgColor-default: #ffffff;
   }
 }
