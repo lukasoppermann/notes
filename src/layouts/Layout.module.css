@@ -10,9 +10,13 @@
 }
 
 .sidebar {
+  --sidebar-max-width: 300px;
+  @media (max-width: 600px) {
+    --sidebar-max-width: 100%;
+  }
   background: var(--bgColor-default);
-  min-width: 250px;
-  max-width: 300px;
+  width: 100%;
+  max-width: var(--sidebar-max-width, 300px);
   padding: 1.5em 1em 1em 1em;
   overflow-y: auto;
   border-right: 1px solid var(--borderColor-default);
