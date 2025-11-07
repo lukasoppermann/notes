@@ -10,16 +10,16 @@ table {
   font-size: 1em;
 }
 th, td {
-  border: 1px solid #dfe2e5;
+  border: 1px solid var(--borderColor-default);
   padding: 0.6em 1em;
   text-align: left;
 }
 th {
-  background: #f6f8fa;
+  background: var(--bgColor-muted);
   font-weight: bold;
 }
 tr:nth-child(even) {
-  background: #f9f9f9;
+  background: var(--bgColor-default);
 }
 
 figure {
