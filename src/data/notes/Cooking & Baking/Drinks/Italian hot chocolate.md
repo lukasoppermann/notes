@@ -1,10 +1,10 @@
-| Ingredients | 3 small cups |
-| ----------- | ------------ |
-| Milk        | 300ml        |
-| Cocoa       | 30g          |
-| Sugar       | 15g          |
-| Corn starch | 15g          |
-| Chocolate   | 30g          |
+| Ingredients | 4 small cups | 2 small cups |
+| ----------- | ------------ | ------------ |
+| Milk        | 300ml        | 150ml        |
+| Cocoa       | 30g          | 15g          |
+| Sugar       | 15g          | 7g           |
+| Corn starch | 15g          | 7g           |
+| Chocolate   | 30g          | 15g          |
 
 ## Instructions
 1. Mix the cocoa powder, sugar, corn starch, pinch of salt and vanilla in a pot with a whisk
