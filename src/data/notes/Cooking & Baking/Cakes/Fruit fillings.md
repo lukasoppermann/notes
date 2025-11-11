@@ -12,7 +12,7 @@ Either with compote or with half compote half apples.
 | Water        | 2 EL            | 2 EL        |
 | Vanilla      | a bit           | a bit       |
 1. Peel and dice apples
-2. Cook with all ingredients for 12-15 minutes
+2. Cook with all ingredients for 8-15 minutes (depends on type of apple), keep stirring to avoid burning and make sure to not overcook so there are pieces left
 3. Let cool before adding to tart shell
 
 #### Add apple slices
