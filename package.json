@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "test:url-normalization": "node src/utils/urlNormalization.test.js",
     "astro": "astro"
   },
   "keywords": [],

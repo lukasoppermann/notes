@@ -1,5 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "astro"
+  "framework": "astro",
+  "cleanUrls": true,
+  "trailingSlash": true
 }

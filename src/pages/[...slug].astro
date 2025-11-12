@@ -12,22 +12,27 @@ export async function getStaticPaths() {
   // Recursively get all markdown files
   function getAllMarkdownFiles(dir, baseDir = notesDir) {
     const files = [];
-    const items = readdirSync(dir);
-    
-    for (const item of items) {
-      const fullPath = join(dir, item);
-      const stat = statSync(fullPath);
+    try {
+      const items = readdirSync(dir);
       
-      if (stat.isDirectory()) {
-        files.push(...getAllMarkdownFiles(fullPath, baseDir));
-      } else if (item.endsWith('.md')) {
-        // Get relative path from notes directory
-        const relativePath = fullPath.replace(baseDir + '/', '').replace('.md', '');
-        files.push({
-          slug: relativePath,
-          fullPath: fullPath,
-        });
+      for (const item of items) {
+        const fullPath = join(dir, item);
+        const stat = statSync(fullPath);
+        
+        if (stat.isDirectory()) {
+          files.push(...getAllMarkdownFiles(fullPath, baseDir));
+        } else if (item.endsWith('.md')) {
+          // Get relative path from notes directory
+          const relativePath = fullPath.replace(baseDir + '/', '').replace('.md', '');
+          files.push({
+            slug: relativePath,
+            fullPath: fullPath,
+          });
+        }
       }
+    } catch (error) {
+      console.error(`Error reading directory ${dir}:`, error);
+      throw error;
     }
     
     return files;
@@ -38,8 +43,9 @@ export async function getStaticPaths() {
   // Create paths for both original slug and normalized slug (with em-dashes replaced)
   const paths = [];
   for (const file of allFiles) {
-    // Add the normalized slug (em-dashes replaced with hyphens)
+    // Normalize slug: replace em-dashes with hyphens
     const normalizedSlug = file.slug.replace(/—/g, '-');
+    
     paths.push({
       params: { slug: normalizedSlug },
       props: { 
@@ -55,8 +61,14 @@ export async function getStaticPaths() {
 const { filepath, originalSlug } = Astro.props;
 const { slug } = Astro.params;
 
-// Read the file content
-const content = readFileSync(filepath, 'utf-8');
+// Read the file content with error handling
+let content;
+try {
+  content = readFileSync(filepath, 'utf-8');
+} catch (error) {
+  console.error(`Error reading file ${filepath}:`, error);
+  throw new Error(`Failed to read file: ${filepath}`);
+}
 
 // Get the notes directory
 const notesDir = join(process.cwd(), 'src/data/notes');
