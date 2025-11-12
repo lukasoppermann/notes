@@ -30,7 +30,7 @@
 4. Once butter is small, sand it between your hands
       ![](/images/CleanShot%202024-12-07%20at%2010.43.55@2x%201.png)
       In the end it should look like this: ![](/images/CleanShot%202024-12-07%20at%2010.44.40@2x.png)
-5. Mix all liquids together: Milk + egg yolk + pinch of salt + sugar + (optional vanilla powder & lemon zest)
+5. Mix Egg yolk + pinch of salt + sugar + vanilla powder & lemon zest
 	   → Mix until sugar and salt are dissolved
 6. Add all liquid over flour mix and use spatula to hack up and down into the mix until the whole mixture starts to form a dough ![](/images/CleanShot%202024-12-07%20at%2010.55.44@2x.png) ![](/images/CleanShot%202024-12-07%20at%2010.56.02@2x.png)
 7. Put dough on work bench and press and slide 4 times ![](/images/CleanShot%202024-12-07%20at%2010.57.15@2x.png)
