@@ -13,16 +13,16 @@
 
 ### Variant 2: VHS Kurs
 
-| Ingredient                | Bakers | 12,5cm Tart       | 22cm Tart           | 28cm Tart           | 10x7cm Tart         |
-| ------------------------- | ------ | ----------------- | ------------------- | ------------------- | ------------------- |
-| **Flour Wheat 405**       | 90%    | 100g              | 180g                | 225g                | 180g                |
-| **Almond flour**          | 10%    | 10g               | 20g                 | 25g                 | 20g                 |
-| **Butter (cold)**         | 50%    | 55g               | 100g                | 100g (40%)          | 100g                |
-| **Salt**                  |        |                   | Pinch               | Pinch               | Pinch               |
-| **Powdered ? Fine sugar** | 35%    | 39g               | 70g                 | 90g                 | 70g                 |
-| **Egg**                   | 20%    | 22g               | 40g                 | 50g                 | 40g                 |
-| **Lemon Zest**            |        | Zest of 1/2 Lemon | Zest of 1/2-1 Lemon | Zest of 1/2-1 Lemon | Zest of 1/2-1 Lemon |
-| **Vanilla Powder**        |        | A pinch           | A pinch             | Pinch               | A pinch             |
+| Ingredient                | Bakers | 12,5cm Tart       | 28cm Tart           | 10x7cm Tart         |
+| ------------------------- | ------ | ----------------- | ------------------- | ------------------- |
+| **Flour Wheat 405**       | 90%    | 100g              | 225g                | 180g                |
+| **Almond flour**          | 10%    | 10g               | 25g                 | 20g                 |
+| **Butter (cold)**         | 50%    | 55g               | 100g (40%)          | 100g                |
+| **Salt**                  |        |                   | Pinch               | Pinch               |
+| **Powdered ? Fine sugar** | 35%    | 39g               | 90g                 | 70g                 |
+| **Egg**                   | 20%    | 22g               | 50g                 | 40g                 |
+| **Lemon Zest**            |        | Zest of 1/2 Lemon | Zest of 1/2-1 Lemon | Zest of 1/2-1 Lemon |
+| **Vanilla Powder**        |        | A pinch           | Pinch               | A pinch             |
 ### Instructions
 1. Sift all flour into bowl
 2. Add all cubed butter to bow

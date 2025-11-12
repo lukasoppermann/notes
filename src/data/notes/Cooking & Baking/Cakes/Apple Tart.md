@@ -2,6 +2,14 @@ By the Irish Baker Abroad
 
 Video: https://www.youtube.com/watch?v=rMhtiCG8ric
 
-## Tart dough
+![[Crust — Pâte Sucrée#Variant 2: VHS Kurs]]
 
-350g of plain flour 200g of salted frozen butter 2 tsp of sugar 50-75ml of cold water
+### Irish Baker
+
+| Ingredient | 28cm Tart |
+| ---------- | --------- |
+| Flour 550  | 445g      |
+| Butter     | 255g      |
+| Sugar      | 10g       |
+| Cold Water | 50-80ml   |
+# Filling
