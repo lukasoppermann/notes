@@ -2,6 +2,11 @@
 
 Either with compote or with half compote half apples.
 
+**Apple types to use:**
+- Braeburn
+- Granny Smith
+- Boskoop
+- Cox Orange
 ### Compote
 
 | Ingredient   | 1/2 12,5cm Tart | 12,5cm Tart |
