@@ -9,6 +9,6 @@ export interface Props {
 const { class: className } = Astro.props;
 ---
 
-<main class={`${styles.Content} ${className || ''}`}>
+<main class={`${styles.Content} ${className || ''}`} data-content>
   <slot />
 </main>

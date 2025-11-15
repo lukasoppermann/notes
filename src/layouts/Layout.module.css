@@ -1,4 +1,11 @@
-.content {
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+:global([data-content]) {
+  width: 100%;
   z-index: 100;
 }
 
@@ -7,49 +14,28 @@
   padding: 2em;
   max-width: 900px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
+[data-ismobile] {
+  .App {
+    display: block;
+    position: relative;
+  }
+      :global([data-content]) {
+      position: relative;
+      transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+    }
+    :global([data-sidebar]) {
+      position: absolute;
+      z-index: 50;
+      width: 100%;
+    }
+    :global(.sidebar-open [data-content]) {
+      transform: translateX(calc(100% - 80px));
+    }
 
-@media (max-width: 700px) {
   .article {
     padding: 8px;
-    box-sizing: border-box;
     width: 100%;
   }
-  
-  .sidebar {
-    /* Hidden by default on mobile */
-    position: fixed;
-    left: 0; 
-    top: 56px; 
-    bottom: 0;
-    transform: translateX(-110%);
-  }
-  
-  .sidebar:global(.open) {
-    transform: translateX(0);
-  }
-  
-  .sidebarBackdrop {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    background: #0006;
-    top: 56px; left: 0; right: 0; bottom: 0;
-    animation: fadein 0.2s;
-  }
-  
-  .sidebarBackdrop:global(.active) {
-    display: block;
-  }
-}
-
-@media (min-width: 701px) {
-  .sidebar {
-    transform: none !important;
-  }
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }

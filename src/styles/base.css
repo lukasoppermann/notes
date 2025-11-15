@@ -11,7 +11,8 @@ body {
   min-height: 100vh;
   background-color: var(--bgColor-canvas);
   color: var(--fgColor-default);
-  display: flex;
+  display: block;
+  position: relative;
 }
 ul {
   padding: 0;

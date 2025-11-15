@@ -26,12 +26,32 @@ const currentPath = Astro.url.pathname;
     <meta name="robots" content="noindex, nofollow">
   </head>
   <body>
-    <Sidebar items={navData} currentPath={currentPath} />
-    <Content class={styles.content}>
-      <Header />
-      <article class={styles.article}>
-        <slot />
-      </article>
-    </Content>
+    <div class={styles.App} data-app>
+      <Sidebar items={navData} currentPath={currentPath} />
+      <Content>
+        <Header />
+        <article class={styles.article}>
+          <slot />
+        </article>
+      </Content>
+    </div>
+    <script>
+      const mobileBreakpoint = '700px';
+      const mediaQuery = window.matchMedia(`(max-width: ${mobileBreakpoint})`);
+      
+      function handleMobileChange(e: MediaQueryListEvent | MediaQueryList) {
+        if (e.matches) {
+          document.body.setAttribute('data-isMobile', '');
+        } else {
+          document.body.removeAttribute('data-isMobile');
+        }
+      }
+      
+      // Initial check
+      handleMobileChange(mediaQuery);
+      
+      // Listen for changes
+      mediaQuery.addEventListener('change', handleMobileChange);
+    </script>
   </body>
 </html>

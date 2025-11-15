@@ -1,16 +1,16 @@
 .sidebar {
   --sidebar-width: 300px;
-  @media (max-width: 600px) {
+  margin-left: calc(var(--sidebar-width) * -1);
+  @media (max-width: 700px) {
     --sidebar-width: 100vw;
+    margin-left: 0;
   }
-  width: 100%;
-  max-width: var(--sidebar-max-width, 300px);
+  width: var(--sidebar-width);
   padding: 1.5em 1em 1em 1em;
   overflow-y: auto;
   box-sizing: border-box;
   transition: margin 0.25s cubic-bezier(.4,0,.2,1);
   z-index: 10;
-  margin-left: calc(var(--sidebar-width) * -1);
   &:global(.open) {
     margin-left: 0;
   }

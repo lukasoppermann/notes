@@ -13,22 +13,19 @@ import styles from './Header.module.css';
   // Sidebar open/close for mobile
   const sidebar = document.querySelector('[data-sidebar]');
   const toggle = document.querySelector('[data-sidebar-toggle]');
-  const backdrop = document.querySelector('[data-sidebar-backdrop]');
+  const app = document.querySelector('[data-app]');
+
   toggle && toggle.addEventListener('click', () => {
     sidebar?.classList.toggle('open');
-    backdrop?.classList.toggle('active');
-  });
-
-  backdrop && backdrop.addEventListener('click', () => {
-    sidebar?.classList.remove('open');
-    backdrop?.classList.remove('active');
+    app?.classList.toggle('sidebar-open');
   });
   
+
   // Also close sidebar if ESC is pressed
   document.addEventListener('keydown', function(e) {
     if (e.key === "Escape") {
       sidebar?.classList.remove('open');
-      backdrop?.classList.remove('active');
+      app?.classList.remove('sidebar-open');
     }
   });
 </script>
