@@ -19,7 +19,7 @@ Video: https://www.youtube.com/watch?v=rMhtiCG8ric
 | Ingredients     | 28cm Tart |
 | --------------- | --------- |
 | Apples (Elster) | 1kg cubed |
-| Sugar           | 100g      |
+| Sugar           | 80g       |
 | Lemon juice     | 1/2 Lemon |
 | Corn Starch     | 15g       |
 ### Instructions
