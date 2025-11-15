@@ -14,12 +14,16 @@ Video: https://www.youtube.com/watch?v=rMhtiCG8ric
 | Cold Water | 50-80ml   |
 # Apple Filling
 
+### Ingredients
+
 | Ingredients     | 28cm Tart |
 | --------------- | --------- |
 | Apples (Elster) | 1kg cubed |
 | Sugar           | 100g      |
 | Lemon juice     | 1/2 Lemon |
 | Corn Starch     | 15g       |
+### Instructions
+
 1. Peel apples and cut into 2cm cubes
 2. Add apples, sugar, lemon juice and corn starch into pot and simmer for a bit
    ![](/images/CleanShot%202025-11-12%20at%2022.35.33@2x.png)
