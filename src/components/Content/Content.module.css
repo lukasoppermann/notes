@@ -9,10 +9,7 @@
   transition: margin 0.25s cubic-bezier(.4,0,.2,1);
   border-radius: 0;
 }
-:global(.isMobile [data-sidebar].open) ~ .Content {
+:global(body:not([data-ismobile]) [data-sidebar].open) ~ .Content {
+  border-radius: 24px 0 0 24px;
   margin: 16px 0 16px 16px;
-  border-radius: 32px 0 0 32px;
-}
-:global(:not(.isMobile) [data-sidebar].open) ~ .Content {
-  border-radius: 8px 0 0 8px;
 }

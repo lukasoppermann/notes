@@ -24,6 +24,7 @@ const currentPath = Astro.url.pathname;
     <title>{title} | Notes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
+    <script src="/scripts/isMobile.js" is:inline></script>
   </head>
   <body>
     <div class={styles.App} data-app>
@@ -36,22 +37,7 @@ const currentPath = Astro.url.pathname;
       </Content>
     </div>
     <script>
-      const mobileBreakpoint = '700px';
-      const mediaQuery = window.matchMedia(`(max-width: ${mobileBreakpoint})`);
-      
-      function handleMobileChange(e: MediaQueryListEvent | MediaQueryList) {
-        if (e.matches) {
-          document.body.setAttribute('data-isMobile', '');
-        } else {
-          document.body.removeAttribute('data-isMobile');
-        }
-      }
-      
-      // Initial check
-      handleMobileChange(mediaQuery);
-      
-      // Listen for changes
-      mediaQuery.addEventListener('change', handleMobileChange);
+      window.isMobile();
     </script>
   </body>
 </html>

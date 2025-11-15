@@ -31,11 +31,11 @@
       width: 100%;
     }
     :global(.sidebar-open [data-content]) {
-      transform: translateX(calc(100% - 80px));
+      transform: translateX(calc(100% - var(--toggle-width)));
     }
 
   .article {
-    padding: 8px;
+    padding: 16px;
     width: 100%;
   }
 }

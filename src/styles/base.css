@@ -16,9 +16,11 @@ body {
 }
 ul {
   padding: 0;
-  margin: 4px 0;
-  li > ul {
-    margin-left: 1em;
+  margin: 4px 0 4px 16px;
+  li {
+    &> ul {
+      margin-left: 8px;
+    } 
   }
 }
 img {
