@@ -3,6 +3,8 @@
   --bgColor-default: hsl(60, 17%, 96%);
   --bgColor-muted: hsl(60, 17%, 85%);
   --borderColor-default: #E1E1E6;
+  --borderColor-muted: hsl(60, 10%, 75%);
   --fgColor-default: hsl(32, 17%, 20%);
+  --fgColor-muted: hsl(32, 5%, 40%);
   --fgColor-link: hsl(220, 80%, 50%);
 }
