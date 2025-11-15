@@ -1,6 +1,7 @@
 :root {
-  --bgColor-default: #F7F7F5;
-  --bgColor-muted: #E8F5FF;
+  --bgColor-canvas: hsl(55, 17%, 94%);
+  --bgColor-default: hsl(60, 17%, 96%);
+  --bgColor-muted: hsl(60, 17%, 85%);
   --borderColor-default: #E1E1E6;
-  --fgColor-default: #131317;
+  --fgColor-default: hsl(32, 17%, 20%);
 }

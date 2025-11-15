@@ -1,0 +1,14 @@
+---
+// Content component for the site
+import styles from './Content.module.css';
+
+export interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<main class={`${styles.Content} ${className || ''}`}>
+  <slot />
+</main>

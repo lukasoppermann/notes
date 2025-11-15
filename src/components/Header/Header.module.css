@@ -3,20 +3,15 @@
 }
 
 .header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
   z-index: 900;
   height: var(--header-height);
   display: flex;
   align-items: center;
-  background: var(--bgColor-default);
-  box-shadow: 0 2px 8px #0002;
   padding: 0 1em;
-  border-bottom: 1px solid var(--borderColor-default);
 }
 
 .menuIcon {
-  display: none;
+  /* display: none; */
   width: 32px;
   height: 32px;
   background: none;
@@ -30,8 +25,8 @@
 .menuIcon span:after {
   display: block;
   background: var(--fgColor-default);
-  height: 4px;
-  width: 28px;
+  height: 3px;
+  width: 24px;
   border-radius: 2px;
   position: relative;
   transition: 0.2s all;
@@ -55,14 +50,3 @@
   line-height: 56px;
 }
 
-@media (min-width: 768px) {
-  .menuIcon {
-    display: none !important;
-  }
-}
-
-@media (max-width: 700px) {
-  .menuIcon {
-    display: inline-block;
-  }
-}

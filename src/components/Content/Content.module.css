@@ -1,0 +1,15 @@
+.Content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--bgColor-default);
+  box-shadow: -2px 0 4px #0001;
+  margin: 0;
+  width: 100%;
+  transition: margin 0.25s cubic-bezier(.4,0,.2,1);
+  border-radius: 0;
+}
+:global([data-sidebar].open) ~ .Content {
+  margin: 16px 0 16px 16px;
+  border-radius: 32px 0 0 32px;
+}
