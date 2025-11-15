@@ -31,9 +31,9 @@ const currentPath = Astro.url.pathname;
       <Sidebar items={navData} currentPath={currentPath} />
       <Content>
         <Header />
-        <article class={styles.article}>
+        <div class={styles.article}>
           <slot />
-        </article>
+        </div>
       </Content>
     </div>
     <script>

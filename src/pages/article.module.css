@@ -1,0 +1,19 @@
+.article {
+  font-size: 1rem;
+  h1 {
+    border-bottom: 1px solid var(--borderColor-muted);
+    padding-bottom: 0.3em;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+}
