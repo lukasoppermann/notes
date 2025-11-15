@@ -1,78 +1,41 @@
-.layout {
+.App {
   display: flex;
-  min-height: 100vh;
-  flex-direction: row;
-  padding-top: var(--header-height, 56px);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-
-.sidebarBackdrop {
-  display: none;
-}
-
-.sidebar {
-  --sidebar-max-width: 300px;
-  @media (max-width: 600px) {
-    --sidebar-max-width: 100%;
-  }
-  background: var(--bgColor-default);
+:global([data-content]) {
   width: 100%;
-  max-width: var(--sidebar-max-width, 300px);
-  padding: 1.5em 1em 1em 1em;
-  overflow-y: auto;
-  border-right: 1px solid var(--borderColor-default);
-  box-sizing: border-box;
-  transition: transform 0.25s cubic-bezier(.4,0,.2,1);
-  z-index: 101;
+  z-index: 100;
 }
 
-.content {
+.article {
   flex: 1;
   padding: 2em;
   max-width: 900px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
+[data-ismobile] {
+  .App {
+    display: block;
+    position: relative;
+  }
+      :global([data-content]) {
+      position: relative;
+      transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+    }
+    :global([data-sidebar]) {
+      position: absolute;
+      z-index: 50;
+    }
+    :global(.sidebar-open [data-content]) {
+      transform: translateX(calc(100% - var(--mobile-sidebar-open-width)));
+    }
 
-@media (max-width: 700px) {
-  .content {
-    padding: 8px;
-    box-sizing: border-box;
+  .article {
+    padding: 16px;
     width: 100%;
   }
-  
-  .sidebar {
-    /* Hidden by default on mobile */
-    position: fixed;
-    left: 0; 
-    top: 56px; 
-    bottom: 0;
-    transform: translateX(-110%);
-  }
-  
-  .sidebar:global(.open) {
-    transform: translateX(0);
-  }
-  
-  .sidebarBackdrop {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    background: #0006;
-    top: 56px; left: 0; right: 0; bottom: 0;
-    animation: fadein 0.2s;
-  }
-  
-  .sidebarBackdrop:global(.active) {
-    display: block;
-  }
-}
-
-@media (min-width: 701px) {
-  .sidebar {
-    transform: none !important;
-  }
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }

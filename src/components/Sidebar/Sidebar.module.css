@@ -1,0 +1,20 @@
+.sidebar {
+  --sidebar-width: 300px;
+  margin-left: calc(var(--sidebar-width) * -1);
+}
+:global([data-ismobile]) .sidebar {
+  --sidebar-width: calc(100vw - var(--mobile-sidebar-open-width));
+  margin-left: 0;
+}
+.sidebar {
+  width: var(--sidebar-width);
+  padding: 1.5em 1em 1em 1em;
+  overflow-y: scroll;
+  height: 100vh;
+  box-sizing: border-box;
+  transition: margin 0.25s cubic-bezier(.4,0,.2,1);
+  z-index: 10;
+  &:global(.open) {
+    margin-left: 0;
+  }
+}

@@ -1,14 +1,33 @@
-html {
+body {
   --font-size: 16px;
-  @media (max-width: 600px) {
-    --font-size: 20px;
-  }
+  --mobile-sidebar-open-width: 56px;
+}
+body[data-ismobile] {
+  --font-size: 20px;
 }
 body {
   font-size: var(--font-size);
   margin: 0;
   font-family: sans-serif;
   min-height: 100vh;
-  background-color: var(--bgColor-default);
+  background-color: var(--bgColor-canvas);
   color: var(--fgColor-default);
+  display: block;
+  position: relative;
+}
+ul {
+  padding: 0;
+  margin: 4px 0 4px 16px;
+  li {
+    &> ul {
+      margin-left: 8px;
+    } 
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: var(--fgColor-link);
 }

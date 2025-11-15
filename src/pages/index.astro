@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import RenderCards from '../components/RenderCards.astro';
+import RenderCards from '../components/RenderCards/RenderCards.astro';
 import { buildNavigation } from '../utils/navigation';
-import styles from '../components/Card.module.css';
+import styles from '../components/RenderCards/Card.module.css';
 
 const navData = await buildNavigation();
 ---

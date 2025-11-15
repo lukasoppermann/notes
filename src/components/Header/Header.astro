@@ -4,32 +4,26 @@ import styles from './Header.module.css';
 ---
 
 <header class={styles.header}>
-  <button class={styles.menuIcon} data-sidebar-toggle aria-label="Open menu">
-    <span></span>
+  <button class={styles.sidebarToggle} data-sidebar-toggle aria-label="Open menu">
+    <div class={styles.menuIcon}><span></span></div>
   </button>
-  <a class={styles.headerTitle} href="/">Notes</a>
 </header>
 
 <script>
   // Sidebar open/close for mobile
   const sidebar = document.querySelector('[data-sidebar]');
   const toggle = document.querySelector('[data-sidebar-toggle]');
-  const backdrop = document.querySelector('[data-sidebar-backdrop]');
+  const app = document.querySelector('[data-app]');
   toggle && toggle.addEventListener('click', () => {
     sidebar?.classList.toggle('open');
-    backdrop?.classList.toggle('active');
+    app?.classList.toggle('sidebar-open');
   });
 
-  backdrop && backdrop.addEventListener('click', () => {
-    sidebar?.classList.remove('open');
-    backdrop?.classList.remove('active');
-  });
-  
   // Also close sidebar if ESC is pressed
   document.addEventListener('keydown', function(e) {
     if (e.key === "Escape") {
       sidebar?.classList.remove('open');
-      backdrop?.classList.remove('active');
+      app?.classList.remove('sidebar-open');
     }
   });
 </script>

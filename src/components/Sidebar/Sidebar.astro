@@ -1,0 +1,10 @@
+---
+const { items = [], currentPath = "" } = Astro.props;
+import NavList from '../NavList/NavList.astro';
+import styles from "./Sidebar.module.css";
+
+---
+
+<nav class={styles.sidebar} data-sidebar>
+  <NavList items={items} currentPath={currentPath} />
+</nav>
