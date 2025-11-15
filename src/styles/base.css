@@ -1,8 +1,9 @@
-html {
+body {
   --font-size: 16px;
-  @media (max-width: 600px) {
-    --font-size: 20px;
-  }
+  --mobile-sidebar-open-width: 56px;
+}
+body[data-ismobile] {
+  --font-size: 20px;
 }
 body {
   font-size: var(--font-size);

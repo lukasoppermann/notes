@@ -1,6 +1,6 @@
 :root {
   --header-height: 56px;
-  --toggle-width: 56px;
+  --toggle-width: var(--mobile-sidebar-open-width);
 }
 
 .header {

@@ -28,10 +28,9 @@
     :global([data-sidebar]) {
       position: absolute;
       z-index: 50;
-      width: 100%;
     }
     :global(.sidebar-open [data-content]) {
-      transform: translateX(calc(100% - var(--toggle-width)));
+      transform: translateX(calc(100% - var(--mobile-sidebar-open-width)));
     }
 
   .article {
