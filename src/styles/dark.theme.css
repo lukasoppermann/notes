@@ -3,7 +3,8 @@
     --bgColor-canvas: hsl(240, 4%, 10%);
     --bgColor-default: hsl(240, 4%, 11%);
     --bgColor-muted: hsl(240, 4%, 15%);
-    --borderColor-default: hsl(240, 3%, 18%);
+    --borderColor-default: hsl(240, 3%, 22%);
+    --borderColor-muted: hsl(240, 4%, 18%);
     --fgColor-default: hsl(60, 17%, 85%);
     --fgColor-muted: hsl(60, 5%, 60%);
     --fgColor-link: hsl(220, 80%, 65%);

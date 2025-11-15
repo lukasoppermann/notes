@@ -30,9 +30,6 @@
     }
   }
   details {
-    &:open {
-      box-shadow: 0 1px 0 0 var(--borderColor-muted);
-    }
     & > summary {
       padding: calc(var(--nav-list-gap) / 2) 6px;
       cursor: pointer;
