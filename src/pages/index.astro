@@ -1,16 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import RenderCards from '../components/RenderCards/RenderCards.astro';
 import { buildNavigation } from '../utils/navigation';
-import styles from '../components/RenderCards/Card.module.css';
 
 const navData = await buildNavigation();
 ---
 
 <Layout title="Home">
-  <h1>Browse by topic</h1>
-
-  <div class={styles.cards}>
-    <RenderCards folders={navData} />
-  </div>
 </Layout>
