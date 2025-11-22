@@ -33,16 +33,9 @@ function normalizeUrl(url) {
 // Helper function to create URL-friendly path
 function encodeUrlPath(path) {
   if (!path) return "";
-  // Replace em-dashes with regular hyphens and URL-encode the rest
-  return path
-    .split("/")
-    .map((segment) => {
-      // Replace em-dash with hyphen
-      const normalized = segment.replace(/—/g, "-");
-      // Then URL-encode
-      return encodeURIComponent(normalized);
-    })
-    .join("/");
+  // Only replace em-dashes with regular hyphens
+  // The browser will handle encoding special characters like & automatically
+  return path.replace(/—/g, "-");
 }
 
 const normalizedCurrent = normalizeUrl(currentPath);

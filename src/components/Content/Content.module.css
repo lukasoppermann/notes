@@ -1,6 +1,7 @@
 .Content {
+  overflow-y: scroll;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
   background-color: var(--bgColor-default);
   box-shadow: -2px 0 4px #0001;
@@ -12,4 +13,5 @@
 :global(body:not([data-ismobile]) [data-sidebar].open) ~ .Content {
   border-radius: 24px 0 0 24px;
   margin: 16px 0 16px 16px;
+  height: calc(100vh - 32px);
 }

@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   padding: 0 1em;
-  position: relative;
+  position: fixed;
 }
 
 .sidebarToggle {

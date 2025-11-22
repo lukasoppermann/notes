@@ -22,7 +22,7 @@
     display: block;
     position: relative;
   }
-      :global([data-content]) {
+    :global([data-content]) {
       position: relative;
       transition: transform 0.25s cubic-bezier(.4,0,.2,1);
     }
@@ -35,7 +35,7 @@
     }
 
   .article {
-    padding: 16px;
+    padding: 32px 16px 16px 16px;
     width: 100%;
   }
 }
