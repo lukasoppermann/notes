@@ -1,6 +1,7 @@
 ---
 const { items = [], currentPath = "" } = Astro.props;
 import styles from "./NavList.module.css";
+import { denormalizeMarkdownPath } from "../../utils/slugNormalization";
 
 // Helper function to normalize URL for comparison
 function normalizeUrl(url) {
@@ -28,14 +29,6 @@ function normalizeUrl(url) {
     .replace(/\/$/, ""); // Remove trailing slash for comparison
 
   return normalized;
-}
-
-// Helper function to create URL-friendly path
-function encodeUrlPath(path) {
-  if (!path) return "";
-  // Only replace em-dashes with regular hyphens
-  // The browser will handle encoding special characters like & automatically
-  return path.replace(/—/g, "-");
 }
 
 const normalizedCurrent = normalizeUrl(currentPath);
@@ -72,9 +65,8 @@ const normalizedCurrent = normalizeUrl(currentPath);
         const isActive = normalizedCurrent === itemUrl;
 
         if (item.title !== "index") {
-          // Build URL with encoded path, ensuring proper leading/trailing slashes
-          const encodedPath = encodeUrlPath(item.url);
-          const href = `/${encodedPath}/`;
+          // URL is already normalized in navigation.ts
+          const href = `/${item.url}/`;
 
           return (
             <li>
