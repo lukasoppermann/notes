@@ -1,0 +1,81 @@
+---
+const { url, title, category } = Astro.props;
+import styles from './FavoriteButton.module.css';
+---
+
+<button 
+  class={styles.favoriteButton}
+  data-favorite-button
+  data-url={url}
+  data-title={title}
+  data-category={category}
+  aria-label="Toggle favorite"
+  title="Add to favorites"
+>
+  <svg 
+    class={`${styles.icon} ${styles.empty}`}
+    data-favorite-icon
+    viewBox="0 0 24 24" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+  </svg>
+</button>
+
+<script>
+  import { addFavorite, removeFavorite, isFavorite } from '../../utils/favorites';
+
+  function initFavoriteButton() {
+    const button = document.querySelector('[data-favorite-button]');
+    if (!button) return;
+
+    const icon = button.querySelector('[data-favorite-icon]');
+    const url = button.getAttribute('data-url');
+    const title = button.getAttribute('data-title');
+    const category = button.getAttribute('data-category');
+
+    if (!url || !title || !category) return;
+
+    // Set initial state
+    function updateIcon() {
+      const favorited = isFavorite(url);
+      if (favorited) {
+        icon?.classList.remove('FavoriteButton_module_empty__');
+        icon?.classList.add('FavoriteButton_module_filled__');
+        button.setAttribute('title', 'Remove from favorites');
+      } else {
+        icon?.classList.remove('FavoriteButton_module_filled__');
+        icon?.classList.add('FavoriteButton_module_empty__');
+        button.setAttribute('title', 'Add to favorites');
+      }
+    }
+
+    updateIcon();
+
+    // Handle click
+    button.addEventListener('click', () => {
+      const favorited = isFavorite(url);
+      
+      if (favorited) {
+        removeFavorite(url);
+      } else {
+        addFavorite(url, title, category);
+      }
+      
+      updateIcon();
+    });
+
+    // Listen for changes from other tabs/windows
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'notes-favorites') {
+        updateIcon();
+      }
+    });
+  }
+
+  // Initialize on page load
+  initFavoriteButton();
+
+  // Re-initialize on view transitions (if using Astro view transitions)
+  document.addEventListener('astro:page-load', initFavoriteButton);
+</script>

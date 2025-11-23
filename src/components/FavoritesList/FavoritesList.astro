@@ -1,0 +1,71 @@
+---
+import styles from './FavoritesList.module.css';
+---
+
+<div class={styles.favoritesList} data-favorites-list>
+  <p class={styles.emptyState} data-empty-state>
+    No favorites yet. Click the star icon on any page to add it to your favorites.
+  </p>
+  <div data-favorites-container></div>
+</div>
+
+<script>
+  import { getFavoritesByCategory } from '../../utils/favorites';
+
+  function renderFavorites() {
+    const container = document.querySelector('[data-favorites-container]');
+    const emptyState = document.querySelector('[data-empty-state]');
+    
+    if (!container || !emptyState) return;
+
+    const favoritesByCategory = getFavoritesByCategory();
+    const categories = Object.keys(favoritesByCategory).sort();
+
+    if (categories.length === 0) {
+      emptyState.style.display = 'block';
+      container.innerHTML = '';
+      return;
+    }
+
+    emptyState.style.display = 'none';
+
+    const html = categories.map(category => {
+      const favorites = favoritesByCategory[category];
+      const items = favorites.map(fav => `
+        <li class="FavoritesList_module_favoriteItem__">
+          <a href="${fav.url}" class="FavoritesList_module_favoriteLink__">
+            <svg class="FavoritesList_module_starIcon__" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            ${fav.title}
+          </a>
+        </li>
+      `).join('');
+
+      return `
+        <div class="FavoritesList_module_category__">
+          <h2 class="FavoritesList_module_categoryTitle__">${category}</h2>
+          <ul class="FavoritesList_module_favoriteItems__">
+            ${items}
+          </ul>
+        </div>
+      `;
+    }).join('');
+
+    container.innerHTML = html;
+  }
+
+  // Initial render
+  renderFavorites();
+
+  // Listen for favorites changes
+  window.addEventListener('favoritesChanged', renderFavorites);
+  window.addEventListener('storage', (e) => {
+    if (e.key === 'notes-favorites') {
+      renderFavorites();
+    }
+  });
+
+  // Re-render on page load (for Astro view transitions)
+  document.addEventListener('astro:page-load', renderFavorites);
+</script>
