@@ -6,6 +6,7 @@ import { basename } from 'path';
 import { readdirSync, readFileSync, statSync } from 'fs';
 import { join } from 'path';
 import { processObsidianTransclusions } from '../utils/obsidian.js';
+import { normalizeMarkdownPath } from '../utils/slugNormalization';
 
 export async function getStaticPaths() {
   const notesDir = join(process.cwd(), 'src/data/notes');
@@ -39,8 +40,8 @@ export async function getStaticPaths() {
   // Create paths for both original slug and normalized slug (with em-dashes replaced)
   const paths = [];
   for (const file of allFiles) {
-    // Add the normalized slug (em-dashes replaced with hyphens)
-    const normalizedSlug = file.slug.replace(/—/g, '-');
+    // Normalize the slug (replace em-dashes with hyphens)
+    const normalizedSlug = normalizeMarkdownPath(file.slug);
     paths.push({
       params: { slug: normalizedSlug },
       props: { 
@@ -49,12 +50,18 @@ export async function getStaticPaths() {
       },
     });
   }
-  
+  console.log(`PATHS`, paths[0]) 
+  console.log(`ALLFILES: `, allFiles[0]);
   return paths;
 }
 
+
 const { filepath, originalSlug } = Astro.props;
 const { slug } = Astro.params;
+
+console.log(`filepath: ${filepath}`);
+console.log(`originalSlug: ${originalSlug}`);
+console.log(`slug: ${slug}`);
 
 const getAfterLastSlash = (str) => {
   const idx = str.lastIndexOf('/');

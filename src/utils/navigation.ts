@@ -1,5 +1,6 @@
 import { readdirSync, statSync } from 'fs';
 import { join } from 'path';
+import { normalizeMarkdownPath } from './slugNormalization';
 
 /**
  * Builds a hierarchical navigation structure from markdown files
@@ -43,12 +44,12 @@ export async function buildNavigation() {
       if (fileName !== 'README') {
         navTree.push({
           title: fileName,
-          url: fileName,
+          url: normalizeMarkdownPath(fileName),
         });
       } else {
         navTree.push({
           title: 'README',
-          url: 'README',
+          url: normalizeMarkdownPath('README'),
         });
       }
       return;
@@ -79,7 +80,7 @@ export async function buildNavigation() {
     const fileName = parts[parts.length - 1];
     currentLevel.push({
       title: fileName,
-      url: relativePath,
+      url: normalizeMarkdownPath(relativePath),
     });
   });
   
