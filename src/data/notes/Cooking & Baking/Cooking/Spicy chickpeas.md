@@ -11,19 +11,17 @@
 - ½ TL Chiliflocken
 - ½ TL gemahlene Paprikapulver
 - ¼ TL Zucker
-- 50 ml Olivenöl
+- 30 ml Olivenöl
+- Salz
+
+**Für die Jogurt Soße**
 - 45 g griechischer Joghurt
 - 4 g Minzblätter (ca. 2–3 Blätter)
 - 10 g Koriandergrün, grob gehackt
 - ½ Limette: 1 TL Saft ausgepresst, Rest in Spalten geschnitten
-- Salz
 
 ## Zubereitung
-
 1. Backofen auf 150 °C Umluft vorheizen.
-    
-2. Kichererbsen mit Knoblauch, Ingwer, Tomaten, Chili, Tomatenmark, Gewürzen, Zucker und 50 ml Olivenöl in eine ofenfeste Pfanne geben, umrühren, Deckel aufsetzen und 75 Minuten im Ofen garen, bis die Knoblauchzehen weich sind und die Tomaten zerfallen.
-    
+2. **In einen Emaille Topf:** Kichererbsen mit Knoblauch, Ingwer, Tomaten, Chili, Tomatenmark, Gewürzen, Zucker und Olivenöl geben, umrühren, Deckel aufsetzen und 75 Minuten auf kleiner Stufe garen, bis die Knoblauchzehen weich sind und die Tomaten zerfallen.
 3. Inzwischen Joghurt mit gehackter Minze, Koriandergrün und etwas Limettensaft verrühren. Wenig geschnittenen Knoblauch sowie ¼ TL Salz unterrühren. Die Kräuter in den Joghurt geben.
-    
-4. Kichererbsen aus dem Ofen nehmen, mit Limettenspalten und Kräuter-Joghurt servieren.
+4. Kichererbsen aus dem Topf nehmen, mit Limettenspalten und Kräuter-Joghurt servieren.
