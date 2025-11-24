@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import styles from './article.module.css';
-import { marked } from 'marked';
 import { basename } from 'path';
-import { readdirSync, readFileSync, statSync } from 'fs';
+import { readdirSync, statSync } from 'fs';
 import { join } from 'path';
-import { processObsidianTransclusions } from '../utils/obsidian.js';
 import { normalizeMarkdownPath } from '../utils/slugNormalization';
+import { processMarkdownFile } from '../utils/markdown';
+import FavoriteButton from '../components/FavoriteButton/FavoriteButton.astro';
 
 export async function getStaticPaths() {
   const notesDir = join(process.cwd(), 'src/data/notes');
@@ -50,8 +50,6 @@ export async function getStaticPaths() {
       },
     });
   }
-  console.log(`PATHS`, paths[0]) 
-  console.log(`ALLFILES: `, allFiles[0]);
   return paths;
 }
 
@@ -59,40 +57,26 @@ export async function getStaticPaths() {
 const { filepath, originalSlug } = Astro.props;
 const { slug } = Astro.params;
 
-console.log(`filepath: ${filepath}`);
-console.log(`originalSlug: ${originalSlug}`);
-console.log(`slug: ${slug}`);
-
 const getAfterLastSlash = (str) => {
   const idx = str.lastIndexOf('/');
   return idx === -1 ? str : str.slice(idx + 1);
 }
 
-// Read the file content
+// Process the markdown file
 const headline = getAfterLastSlash(originalSlug);
-const fileContent = readFileSync(filepath, 'utf-8');
-const content = `# ${headline}\n\n${fileContent}`
-
-// Get the notes directory
-const notesDir = join(process.cwd(), 'src/data/notes');
-// Process Obsidian transclusions
-const processedContent = processObsidianTransclusions(content, notesDir);
-
-// Use marked to render markdown
-let htmlContent = marked(processedContent);
-
-// Post-process the HTML to wrap tables in divs and images in figures
-// Wrap tables in div.table-wrapper
-htmlContent = htmlContent.replace(/<table>/g, '<div class="table-wrapper"><table>');
-htmlContent = htmlContent.replace(/<\/table>/g, '</table></div>');
-
-// Wrap standalone images in figure elements (but not those already in other elements)
-htmlContent = htmlContent.replace(/<p>(<img[^>]*>)<\/p>/g, '<figure>$1</figure>');
+const htmlContent = await processMarkdownFile(filepath, headline);
 
 // Use original slug for title to preserve special characters
 const title = basename(originalSlug || slug);
+
+// Extract category (first part of the path) for favorites
+const category = originalSlug.includes('/') ? originalSlug.split('/')[0] : 'Other';
+const currentUrl = Astro.url.pathname;
 ---
 
 <Layout title={title}>
+  <div class={styles.articleHeader}>
+    <FavoriteButton url={currentUrl} title={title} category={category} />
+  </div>
   <article class={styles.article} set:html={htmlContent} />
 </Layout>
