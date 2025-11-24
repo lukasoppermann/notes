@@ -12,7 +12,7 @@ import { processObsidianTransclusions } from './obsidian.js';
 export async function processMarkdownFile(filepath: string, headline: string): Promise<string> {
   // Read the file content
   const fileContent = readFileSync(filepath, 'utf-8');
-  const content = `# ${headline}\n\n${fileContent}`;
+  const content = `${fileContent}`;
 
   // Get the notes directory
   const notesDir = join(process.cwd(), 'src/data/notes');

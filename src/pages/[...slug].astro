@@ -63,8 +63,7 @@ const getAfterLastSlash = (str) => {
 
 // Process the markdown file
 const headline = getAfterLastSlash(originalSlug);
-const htmlContent = await processMarkdownFile(filepath, headline);
-
+let htmlContent = await processMarkdownFile(filepath);
 // Use original slug for title to preserve special characters
 const title = basename(originalSlug || slug);
 
@@ -74,8 +73,11 @@ const currentUrl = Astro.url.pathname;
 ---
 
 <Layout title={title}>
-  <div class={styles.articleHeader}>
-    <FavoriteButton url={currentUrl} title={title} category={category} />
-  </div>
-  <article class={styles.article} set:html={htmlContent} />
+  <article class={styles.article}>
+    <div class={styles.articleHeader}>
+      <h1>{headline}</h1>
+      <FavoriteButton url={currentUrl} title={title} category={category} />
+    </div>
+    <Fragment set:html={htmlContent} />
+  </article>
 </Layout>
