@@ -35,6 +35,11 @@ const normalizedCurrent = normalizeUrl(currentPath);
 ---
 
 <ul class={styles.navList}>
+  <li>
+    <a href="/" class={normalizedCurrent === "" ? styles.active : ""}>
+      Favorites
+    </a>
+  </li>
   {
     items.map((item) => {
       if (item.children) {

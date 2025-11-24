@@ -13,8 +13,9 @@ import styles from './FavoriteButton.module.css';
   title="Add to favorites"
 >
   <svg 
-    class={`${styles.icon} ${styles.empty}`}
+    class={styles.icon}
     data-favorite-icon
+    data-state="empty"
     viewBox="0 0 24 24" 
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -34,20 +35,13 @@ import styles from './FavoriteButton.module.css';
     const title = button.getAttribute('data-title');
     const category = button.getAttribute('data-category');
 
-    if (!url || !title || !category) return;
+    if (!url || !title || !category || !icon) return;
 
     // Set initial state
     function updateIcon() {
       const favorited = isFavorite(url);
-      if (favorited) {
-        icon?.classList.remove('FavoriteButton_module_empty__');
-        icon?.classList.add('FavoriteButton_module_filled__');
-        button.setAttribute('title', 'Remove from favorites');
-      } else {
-        icon?.classList.remove('FavoriteButton_module_filled__');
-        icon?.classList.add('FavoriteButton_module_empty__');
-        button.setAttribute('title', 'Add to favorites');
-      }
+      icon.setAttribute('data-state', favorited ? 'filled' : 'empty');
+      button.setAttribute('title', favorited ? 'Remove from favorites' : 'Add to favorites');
     }
 
     updateIcon();
