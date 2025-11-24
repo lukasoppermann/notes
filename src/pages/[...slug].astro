@@ -4,7 +4,6 @@ import styles from './article.module.css';
 import { basename } from 'path';
 import { readdirSync, statSync } from 'fs';
 import { join } from 'path';
-import { normalizeMarkdownPath } from '../utils/slugNormalization';
 import { processMarkdownFile } from '../utils/markdown';
 import FavoriteButton from '../components/FavoriteButton/FavoriteButton.astro';
 
@@ -31,17 +30,16 @@ export async function getStaticPaths() {
         });
       }
     }
-    
     return files;
   }
   
   const allFiles = getAllMarkdownFiles(notesDir);
   
-  // Create paths for both original slug and normalized slug (with em-dashes replaced)
+  // Create paths - don't URL encode the slug, Astro handles that
   const paths = [];
   for (const file of allFiles) {
-    // Normalize the slug (replace em-dashes with hyphens)
-    const normalizedSlug = normalizeMarkdownPath(file.slug);
+    // Just replace em-dashes with hyphens, but don't URL encode
+    const normalizedSlug = file.slug.replace(/—/g, '-');
     paths.push({
       params: { slug: normalizedSlug },
       props: { 
@@ -50,6 +48,7 @@ export async function getStaticPaths() {
       },
     });
   }
+
   return paths;
 }
 
