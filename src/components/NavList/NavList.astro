@@ -1,7 +1,6 @@
 ---
 const { items = [], currentPath = "" } = Astro.props;
 import styles from "./NavList.module.css";
-import { denormalizeMarkdownPath } from "../../utils/slugNormalization";
 
 // Helper function to normalize URL for comparison
 function normalizeUrl(url) {
@@ -66,7 +65,7 @@ const normalizedCurrent = normalizeUrl(currentPath);
 
         if (item.title !== "index") {
           // URL is already normalized in navigation.ts
-          const href = `/${item.url}/`;
+          const href = item.url === "" ? "/" : `/${item.url}/`;
 
           return (
             <li>

@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { buildNavigation } from '../utils/navigation';
+import FavoritesList from '../components/FavoritesList/FavoritesList.astro';
 
 const navData = await buildNavigation();
 ---
 
 <Layout title="Home">
+  <h1>Favorites</h1>
+  <FavoritesList />
 </Layout>
