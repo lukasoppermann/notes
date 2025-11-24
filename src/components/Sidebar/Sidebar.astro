@@ -6,5 +6,5 @@ import styles from "./Sidebar.module.css";
 ---
 
 <nav class={styles.sidebar} data-sidebar>
-  <NavList items={items} currentPath={currentPath} />
+  <NavList items={[{title: "Favorites", url: ""}, ...items]} currentPath={currentPath} />
 </nav>
