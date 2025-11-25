@@ -1,3 +1,7 @@
+---
+title: "Snowboarding"
+---
+
 ## What to learn
 - 2024
 	- **Lift**
