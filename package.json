@@ -17,5 +17,8 @@
     "@astrojs/markdown-remark": "^6.3.8",
     "astro": "^5.14.5",
     "marked": "^16.4.0"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3"
   }
 }

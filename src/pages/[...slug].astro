@@ -62,10 +62,9 @@ const getAfterLastSlash = (str) => {
 }
 
 // Process the markdown file
-const headline = getAfterLastSlash(originalSlug);
-let htmlContent = await processMarkdownFile(filepath);
+const { content: htmlContent, frontmatter } = await processMarkdownFile(filepath);
 // Use original slug for title to preserve special characters
-const title = basename(originalSlug || slug);
+const title = frontmatter.title || basename(originalSlug || slug);
 
 // Extract category (first part of the path) for favorites
 const category = originalSlug.includes('/') ? originalSlug.split('/')[0] : 'Other';
@@ -75,7 +74,7 @@ const currentUrl = Astro.url.pathname;
 <Layout title={title}>
   <article class={styles.article}>
     <div class={styles.articleHeader}>
-      <h1>{headline}</h1>
+      <h1>{title}</h1>
       <FavoriteButton url={currentUrl} title={title} category={category} />
     </div>
     <Fragment set:html={htmlContent} />
