@@ -1,5 +1,6 @@
 import { readdirSync, statSync } from 'fs';
 import { join } from 'path';
+import { processMarkdownFile } from './markdown';
 
 /**
  * Builds a hierarchical navigation structure from markdown files
@@ -21,7 +22,10 @@ export async function buildNavigation() {
       } else if (item.endsWith('.md')) {
         // Get relative path from notes directory
         const relativePath = fullPath.replace(baseDir + '/', '').replace('.md', '');
-        files.push(relativePath);
+        files.push({
+          relativePath,
+          fullPath
+        });
       }
     }
     
@@ -34,18 +38,22 @@ export async function buildNavigation() {
   const navTree = [];
   
   // Process all file paths
-  allFiles.forEach(relativePath => {
-    const parts = relativePath.split('/');
+  for (const file of allFiles) {
+    const parts = file.relativePath.split('/');
+    
+    // Get frontmatter to extract title
+    const { frontmatter } = await processMarkdownFile(file.fullPath);
+    const fileName = parts[parts.length - 1];
+    const displayTitle = frontmatter.title || fileName;
     
     // Handle root-level files
     if (parts.length === 1) {
-      const fileName = parts[0];
         navTree.push({
-          title: fileName,
+          title: displayTitle,
           url: fileName.replace(/—/g, '-'),
         });
 
-      return;
+      continue;
     }
     
     // Handle nested files
@@ -70,12 +78,11 @@ export async function buildNavigation() {
     }
     
     // Add the file to the current level
-    const fileName = parts[parts.length - 1];
     currentLevel.push({
-      title: fileName,
-      url: relativePath.replace(/—/g, '-'),
+      title: displayTitle,
+      url: file.relativePath.replace(/—/g, '-'),
     });
-  });
+  }
   
   // Sort navigation alphabetically
   const sortNav = (items) => {
