@@ -64,11 +64,12 @@ export async function buildNavigation() {
       const folderName = parts[i];
       
       // Find or create folder in current level
-      let folder = currentLevel.find(item => item.title === folderName && item.children);
+      let folder = currentLevel.find(item => item.folderName === folderName && item.children);
       
       if (!folder) {
         folder = {
-          title: folderName,
+          title: folderName.replace(/-/g, ' ').replace(/ and /g, ' & '),
+          folderName: folderName,
           children: [],
         };
         currentLevel.push(folder);
