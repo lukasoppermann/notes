@@ -44,12 +44,12 @@
       &::after {
         content: "";
         transition: transform 0.2s;
-          flex: 1 1 auto;
-  height: 1px;
-  background: var(--borderColor-muted);
-  margin-left: 1em; /* space between text and line */
-  /* To perfectly align with text: */
-  transform: translateY(0.15em);
+        flex: 1 1 auto;
+        height: 1px;
+        background: var(--borderColor-muted);
+        margin-left: 1em; /* space between text and line */
+        /* To perfectly align with text: */
+        transform: translateY(0.15em);
       }
     }
   }

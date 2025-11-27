@@ -40,9 +40,9 @@ import styles from './FavoritesList.module.css';
       `).join('');
 
       return `
-        <div class="FavoritesList_module_category__">
-          <h2 class="FavoritesList_module_categoryTitle__">${category.replace(/-/g, " ").replace(" and ", " & ")}</h2>
-          <ul class="FavoritesList_module_favoriteItems__">
+        <div class="FavoritesListCategory">
+          <h2 class="FavoritesListCategory_Title">${category.replace(/-/g, " ").replace(" and ", " & ")}</h2>
+          <ul>
             ${items}
           </ul>
         </div>
