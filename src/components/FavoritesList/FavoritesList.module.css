@@ -1,5 +1,52 @@
 .favoritesList {
+  width: 100%;
   margin: 2em 0;
+  :global(.FavoritesListItem) {
+    margin-bottom: 0.5em;
+    list-style: none;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.5em;
+      flex-shrink: 0;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      padding: 0.5em;
+      text-decoration: none;
+      color: var(--fgColor-default);
+      border-radius: 4px;
+      transition: background-color 0.2s;
+      &:hover {
+        background-color: var(--bgColor-muted);
+      }
+    }
+  }
+  :global(.FavoritesListCategory) {
+    margin-bottom: 2em;
+  }
+  :global(.FavoritesListCategory_Title) {
+    display: flex;
+          align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--fgColor-muted);
+    margin: 0.5em 0;
+    list-style: none;
+    text-transform: uppercase;
+    padding-bottom: 0.3em;
+    &::after {
+      content: "";
+      transition: transform 0.2s;
+      flex: 1 1 auto;
+      height: 1px;
+      background: var(--borderColor-muted);
+      margin-left: 1em; /* space between text and line */
+      /* To perfectly align with text: */
+      transform: translateY(0.15em);
+    }
+  }
 }
 
 .emptyState {
