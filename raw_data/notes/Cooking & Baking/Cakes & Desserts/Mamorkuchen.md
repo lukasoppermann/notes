@@ -11,6 +11,7 @@
 | Salz                            | 1/2 TL                        |
 | Vanilleextrakt oder Vanillemark | 1 EL Vanillepaste             |
 | Buttermilch                     | 170 ml                        |
+| Eierlikör (optional)            | 60 ml                         |
 | Backpulver                      | 1 TL                          |
 | Speisenatron                    | 1/2 TL                        |
 | Eier (Raumtemperatur)           | 4 (2 Eier + 2 Eigelb)         |
