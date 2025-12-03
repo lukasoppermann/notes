@@ -1,1 +1,0 @@
-Some recipe content here.
