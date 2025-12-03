@@ -6,8 +6,8 @@ title: "Italian hot chocolate"
 | ----------- | ------------ | ------------ |
 | Milk        | 300ml        | 150ml        |
 | Cocoa       | 30g          | 15g          |
-| Sugar       | 15g          | 7g           |
-| Corn starch | 15g          | 7g           |
+| Sugar       | 10g          | 5g           |
+| Corn starch | 10g          | 5g           |
 | Chocolate   | 30g          | 15g          |
 
 ## Instructions
