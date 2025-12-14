@@ -1,0 +1,7 @@
+- Brussel sprouts
+- 1 tsp garlic powder or 4 cloves of garlic
+- 1 tsp onion powder
+- 2 tbsp sesame seeds black or light brown
+- 1 tsp red pepper flakes
+- 1 tsp turmeric
+- 1 pinch sea salt
