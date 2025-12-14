@@ -1,4 +1,4 @@
-  serys### Zutaten (für eine Person)
+  ### Zutaten (für eine Person)
 - 100g trockene Kichererbsen über nacht eingelegt und dann gekocht, oder aus der Dose Kichererbsen (abgetropft ca. 120 g)
 - 3 Knoblauchzehen
 - 7 g Ingwer (ca. 1 cm), geschält und fein gestreift

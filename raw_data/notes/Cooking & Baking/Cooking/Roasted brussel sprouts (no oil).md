@@ -5,3 +5,14 @@
 - 1 tsp red pepper flakes
 - 1 tsp turmeric
 - 1 pinch sea salt
+- - 3 Knoblauchzehen
+- 7 g Ingwer (ca. 1 cm), geschält und fein gestreift
+- 100 g Datteltomaten oder Kirschtomaten
+- ¾ rote Chilischote, mild oder scharf, längs eingeschnitten
+- 2½ TL Tomatenmark
+- ½ TL Kreuzkümmelsamen, im Mörser grob zerstoßen
+- ½ TL Korianderkörner, im Mörser grob zerstoßen
+- ⅛ TL gemahlene Kurkuma
+- ½ TL Chiliflocken
+- ½ TL gemahlene Paprikapulver
+- ¼ TL Zucker
