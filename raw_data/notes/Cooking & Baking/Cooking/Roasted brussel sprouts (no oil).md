@@ -8,3 +8,7 @@
 - ½ TL pinch sea salt
 - 7 g Ingwer (ca. 1 cm), geschält und fein gestreift
 - ⅛ TL gemahlene Kurkuma
+
+**Ingredients**
+- Preheat oven to 220°C
+- Roast for about 15-20min
