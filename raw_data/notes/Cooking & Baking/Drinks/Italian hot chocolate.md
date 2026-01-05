@@ -2,8 +2,8 @@
 | ----------- | ------------ | ------------ |
 | Milk        | 300ml        | 150ml        |
 | Cocoa       | 30g          | 15g          |
-| Sugar       | 10g          | 5g           |
-| Corn starch | 10g          | 5g           |
+| Sugar       | 6g           | 3g           |
+| Corn starch | 6g           | 3g           |
 | Chocolate   | 30g          | 15g          |
 
 ## Instructions
