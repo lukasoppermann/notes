@@ -1,26 +1,26 @@
 ## Ingredients
 
-| Zutat                           | Menge/Angabe (10-12 Personen) |
-| ------------------------------- | ----------------------------- |
-| **Für den Teig**                |                               |
-| Butter (Raumtemperatur)         | 250 g                         |
-| Mehl                            | 275 g                         |
-| Zucker                          | 275 g                         |
-| Salz                            | 1/2 TL                        |
-| Vanilleextrakt oder Vanillemark | 1 EL Vanillepaste             |
-| Buttermilch                     | 150 ml                        |
-| Eierlikör (optional)            | 60 ml                         |
-| Zitronensaft                    | 40ml                          |
-| Zitronen Abrieb                 | ca. 1/2 Zitrone oder Limette  |
-| Backpulver                      | 1 TL                          |
-| Speisenatron                    | 1/2 TL                        |
-| Eier (Raumtemperatur)           | 4 (2 Eier + 2 Eigelb)         |
-| **Glasur**                      |                               |
-| Weiße Schokolade für Guss       | 100g                          |
-| Zitronen / Limetten Abrieb      | 1/4 Zitrone oder Limette      |
-| oder                            |                               |
-| Puderzucker                     | 100 g                         |
-| Zitronensaft                    | 2 EL                          |
+| Zutat                           | Menge/Angabe (10-12 Personen)             |
+| ------------------------------- | ----------------------------------------- |
+| **Für den Teig**                |                                           |
+| Butter (Raumtemperatur)         | 250 g                                     |
+| Mehl                            | 275 g                                     |
+| Zucker                          | 220 g                                     |
+| Backpulver                      | 1 TL                                      |
+| Salz                            | 1/4 TL                                    |
+| Speisenatron                    | 1/2 TL                                    |
+| Vanilleextrakt oder Vanillemark | 1 EL Vanillepaste                         |
+| Eier (Raumtemperatur)           | 4 (2 Eier + 2 Eigelb)                     |
+| Buttermilch                     | 150 ml                                    |
+| Zitronen Abrieb                 | 4 Zitronen                                |
+| Zitronensaft                    | 40ml                                      |
+| Eierlikör (optional)            | 60 ml                                     |
+| **Sirup**                       |                                           |
+| Wasser (Buttermilch?)           | 80g                                       |
+|                                 |                                           |
+| **Glasur**                      |                                           |
+| Puderzucker                     | 115 g                                     |
+| Zitronensaft                    | 10-30g (vorsichtig auf Konsistenz achten) |
 
 
 ## Instructions
