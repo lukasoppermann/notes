@@ -16,9 +16,8 @@
 | Zitronensaft                    | 40ml                                      |
 | Eierlikör (optional)            | 60 ml                                     |
 | **Sirup**                       |                                           |
-| Wasser (Buttermilch?)           | 80g                                       |
 | Zitronensaft                    | 80g                                       |
-| Zucker                          |                                           |
+| Zucker                          | 60g                                       |
 | **Glasur**                      |                                           |
 | Puderzucker                     | 115 g                                     |
 | Zitronensaft                    | 10-30g (vorsichtig auf Konsistenz achten) |
@@ -33,6 +32,13 @@
 4. Buttermilch, Zitronensaft und Eierlkör (optional) vermischen
 5. Mehl und Buttermlich in drei Etappen hinzufügen und vermischen.
 
+## Zitronen Tränke
+Für den **frischen, saueren Kick** 
+
+- Mische den Zitronensaft und den normalen Zucker in einer Tasse. Rühre mit einem Löffel immer mal wieder um, während der Kuchen noch im Ofen ist.
+- **Wichtig:** Der Zucker braucht in kaltem Saft ein paar Minuten, bis er sich ganz aufgelöst hat (die Flüssigkeit wird dann wieder klarer).
+- **Anwendung:** Gieße diese kalte Mischung über den **knallheißen** Kuchen direkt aus dem Ofen. Die Hitze des Kuchens sorgt dafür, dass der Sirup blitzschnell eingesogen wird.
+
 ### Backofen vorheizen
 1. Den Backofen auf 175°C Umluft (190 °C Ober-/Unterhitze) vorheizen. 
 2. Eine Kastenform gründlich mit viel Butter einfetten und mit sehr viel Mehl dick ausstreuen.
@@ -41,6 +47,17 @@
 5. Temperatur auf 170°C reduzieren und die Form im Ofen drehen
 6. Weiter 10-15 min backen
 7. **Garprobe:** Holzspieß mittig einstechen, wenn er sauber raus kommt, ist der Kuchen gut.
-8. Kuchen **15 min (NICHT länger!)** in der Form ruhen lassen, nach 15 Minuten aus der Form nehmen und stürzen.
-9. Auf Gitter stürzen und 1h 30 min auskühlen lassen
-10. Wenn kalt mit geschmolzener Schokolade oder Puderzucker + Zitronensaft vermischt bestreichen
+8. Sofort **Tränken**
+9. Kuchen **15 min (NICHT länger!)** in der Form ruhen lassen, nach 15 Minuten aus der Form nehmen und stürzen.
+
+### Tränken
+1. Stich mit dem Holzspieß überall tief ein (während er in der Form ist).
+2. **Sofort tränken:** Streiche deine saure Mischung (Zitrone + Zucker) langsam mit einem Pinsel über den heißen Kuchen.
+	1. Seiten erst nach den 15 minuten und vorsichtig dünn einstreichen
+3. **15 min (NICHT länger!)** in der Form ruhen lassen, nach 15 Minuten aus der Form nehmen
+4. Jetzt die Seiten des Kuchens vorsichtig noch einstreichen
+5. Auf Gitter stürzen und 1h 30 min auskühlen lassen
+
+## Glasur
+Die Glasur muss zähflüssig wie Honig sein. Wenn sie zu flüssig ist, läuft sie einfach vom Kuchen runter. Wenn sie zu fest ist, lässt sie sich nicht verteilen.
+
