@@ -17,7 +17,8 @@
 | Eierlikör (optional)            | 60 ml                                     |
 | **Sirup**                       |                                           |
 | Wasser (Buttermilch?)           | 80g                                       |
-|                                 |                                           |
+| Zitronensaft                    | 80g                                       |
+| Zucker                          |                                           |
 | **Glasur**                      |                                           |
 | Puderzucker                     | 115 g                                     |
 | Zitronensaft                    | 10-30g (vorsichtig auf Konsistenz achten) |
