@@ -2,7 +2,7 @@
 
 | Zutat                           | Menge/Angabe (10-12 Personen)             |
 | ------------------------------- | ----------------------------------------- |
-| **Zitronen-Gelee**              |                                           |
+| **Zitronen-Gelee** (optional)   |                                           |
 | Zitronensaft                    | 50 ml (ca. 3-4 Zitronen)                  |
 | Speisestärke                    | 25g (gesiebt)                             |
 | Zucker                          | 50g                                       |
