@@ -1,6 +1,7 @@
 
 # Sourdough Foccacia (7h)
 
+**For 1 Foccacia**
 - 423g all-purpose flour
 - 181g high-protein bread flour
 - 12g extra virgin olive oil
