@@ -7,9 +7,8 @@
 ### Ingredients
 - 560g bread flour or Italian 00 flour, with 12% protein content
 	- Optional 10% rye
-- 100g Sourdough discard
-	- ~~add 20% of sourdough weight as grams of water on top (e.g. 100g sourdough + 20g water to account for dry starter)~~
-- 470g lukewarm water (27°C to 37°C)
+- 50g Sourdough discard
+- 480g lukewarm water (27°C to 37°C)
 	- Adjust water depending on flour is, you might need to add more water to get the wet dough consistency. So if your dough is dry, don’t be afraid to add more water.
 - 15g salt
 - 15g honey
