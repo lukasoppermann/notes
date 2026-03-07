@@ -5,7 +5,7 @@
 | **Soft butter** | 0.1   | 25g                                           | 15g                                       | 20g                                       | 25g                                           | 2,5g                    |
 | **Vanilla**     |       | 1/2 Schote oder 1/8 bis 1/4 TL Vanille pulver | 1 Messerspritze bis 1/8 TL Vanille pulver | 1 Messerspritze bis 1/8 TL Vanille pulver | 1/2 Schote oder 1/8 bis 1/4 TL Vanille pulver |                         |
 | **Egg yolk**    |       | 2 yolk (eggs size M)                          | 1 yolk (egg size M)                       | 1 yolk (egg size M)                       | 2 yolk (eggs size M)                          | 1/5  yolk (eggs size M) |
-| **Starch**      | 0.08  | 20g                                           | 12g                                       | 16g                                       | 20g                                           | 2g                      |
+| **Starch**      | 0.08  | 22g                                           | 13g                                       | 17g                                       | 22g                                           | 3g                      |
 | **Salz**        |       | Prise                                         | Prise                                     | Prise                                     | Prise                                         |                         |
 
 ## Instructions
