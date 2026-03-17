@@ -1,30 +1,30 @@
 ## Ingredients
 
-| Zutat                           | Menge/Angabe (10-12 Personen)             |
-| ------------------------------- | ----------------------------------------- |
-| **Zitronen-Gelee** (optional)   |                                           |
-| Zitronensaft                    | 50 ml (ca. 3-4 Zitronen)                  |
-| Speisestärke                    | 25g (gesiebt)                             |
-| Zucker                          | 50g                                       |
-| **Für den Teig**                |                                           |
-| Butter (Raumtemperatur)         | 250 g                                     |
-| Mehl                            | 275 g                                     |
-| Zucker                          | 220 g                                     |
-| Backpulver                      | 1 TL                                      |
-| Salz                            | 1/4 TL                                    |
-| Speisenatron                    | 1/2 TL                                    |
-| Vanilleextrakt oder Vanillemark | 1 EL Vanillepaste                         |
-| Eier (Raumtemperatur)           | 4 (2 Eier + 2 Eigelb)                     |
-| Buttermilch                     | 150 ml                                    |
-| Zitronen Abrieb                 | 4 Zitronen                                |
-| Zitronensaft                    | 40ml                                      |
-| Eierlikör (optional)            | 60 ml                                     |
-| **Sirup**                       |                                           |
-| Zitronensaft                    | 80g                                       |
-| Zucker                          | 60g                                       |
-| **Glasur**                      |                                           |
-| Puderzucker                     | 115 g                                     |
-| Zitronensaft                    | 10-30g (vorsichtig auf Konsistenz achten) |
+| Zutat                            | Menge/Angabe (10-12 Personen)             |
+| -------------------------------- | ----------------------------------------- |
+| 1. **Zitronen-Gelee** (optional) |                                           |
+| Zitronensaft                     | 50 ml (ca. 3-4 Zitronen)                  |
+| Speisestärke                     | 25g (gesiebt)                             |
+| Zucker                           | 50g                                       |
+| 2. **Für den Teig** —————————    |                                           |
+| Butter (Raumtemperatur)          | 250 g                                     |
+| Mehl                             | 275 g                                     |
+| Zucker                           | 220 g                                     |
+| Backpulver                       | 1 TL                                      |
+| Salz                             | 1/4 TL                                    |
+| Speisenatron                     | 1/2 TL                                    |
+| Vanilleextrakt oder Vanillemark  | 1 EL Vanillepaste                         |
+| Eier (Raumtemperatur)            | 4 (2 Eier + 2 Eigelb)                     |
+| Buttermilch                      | 150 ml                                    |
+| Zitronen Abrieb                  | 4 Zitronen                                |
+| Zitronensaft                     | 40ml                                      |
+| Eierlikör (optional)             | 60 ml                                     |
+| 3. **Sirup** —————————           |                                           |
+| Zitronensaft                     | 80g                                       |
+| Zucker                           | 60g                                       |
+| 4. **Glasur** —————————          |                                           |
+| Puderzucker                      | 115 g                                     |
+| Zitronensaft                     | 10-30g (vorsichtig auf Konsistenz achten) |
 
 
 ## Instructions
