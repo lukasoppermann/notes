@@ -20,8 +20,8 @@
 | Zitronensaft                     | 40ml                                      |
 | Eierlikör (optional)             | 60 ml                                     |
 | 3. **Sirup** —————————           |                                           |
-| Zitronensaft                     | 80g                                       |
-| Zucker                           | 60g                                       |
+| Zitronensaft                     | 40g                                       |
+| Zucker                           | 30g                                       |
 | 4. **Glasur** —————————          |                                           |
 | Puderzucker                      | 115 g                                     |
 | Zitronensaft                     | 10-30g (vorsichtig auf Konsistenz achten) |
