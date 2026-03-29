@@ -33,4 +33,4 @@ Auf Backblech legen und mit Ei anstreichen.
 
 14-16h in Kühlschrank, oder 1 Stunde im Raum gehen lassen.
 
-Vor backen nochmal mit Ei anstreichen.
+Vor dem Backen nochmal mit Ei anstreichen.
