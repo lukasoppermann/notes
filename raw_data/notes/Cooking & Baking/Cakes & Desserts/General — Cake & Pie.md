@@ -1,5 +1,5 @@
 ---
-related: ["[[Github Prototyping 145]]"]
+related: ["[[Github Prototyping 145]]", "[[Github Prototyping 117]]"]
 ---
 
 ## Tortenband
