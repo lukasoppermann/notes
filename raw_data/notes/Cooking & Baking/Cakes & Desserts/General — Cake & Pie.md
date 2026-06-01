@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 145]]"]
+---
+
 ## Tortenband
 
 | Tart size | Ribbon length |
