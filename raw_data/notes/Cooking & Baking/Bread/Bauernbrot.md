@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 173]]"]
+---
+
 # Graubrot / Bauernbrot
 
 ### Vorteig (8-12h gehen lassen)
