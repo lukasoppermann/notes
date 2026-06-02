@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 275]]"]
+---
+
 ## Ingredients
 
 | Zutat                            | Menge/Angabe (10-12 Personen)                                   |

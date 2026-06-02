@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 275]]"]
+---
+
 ![](/images/Pasted%20image%2020251014092631.png)
 
 ## Ingredients
