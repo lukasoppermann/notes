@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 598]]"]
+---
+
 ## Knee steering
 Stacked position over the board. Face facing the direction of travel. Use the front knee to steer and put about 60% of your weight on lead foot.
 - **Toe turn:** Squish the bug (move knee towards toes)
