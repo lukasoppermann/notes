@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 256]]", "[[Github Prototyping 974]]", "[[Github Prototyping 575]]"]
+---
+
 # Tangy Balsamic-Dijon Dressing
 - **Flavor Profile:** Sweet, tangy, and robust.
 - **Best for:** Heartier greens (kale, spinach, romaine) and grain bowls.

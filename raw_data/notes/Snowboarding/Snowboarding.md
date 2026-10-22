@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 1785]]", "[[Github Prototyping 1789]]", "[[Github Prototyping 2010]]", "[[Github Prototyping 1790]]", "[[Github Prototyping 598]]", "[[Github Prototyping 655]]", "[[Github Prototyping 1791]]"]
+---
+
 ## What to learn
 - 2024
 	- **Lift**

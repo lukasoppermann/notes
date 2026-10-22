@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 2022]]"]
+---
+
 By the Irish Baker Abroad
 
 Video: https://www.youtube.com/watch?v=rMhtiCG8ric

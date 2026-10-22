@@ -1,5 +1,5 @@
 ---
-related: ["[[Github Prototyping 145]]", "[[Github Prototyping 117]]", "[[Github Prototyping 160]]", "[[Github Prototyping 326]]", "[[Github Prototyping 352]]"]
+related: ["[[Github Prototyping 145]]", "[[Github Prototyping 117]]", "[[Github Prototyping 160]]", "[[Github Prototyping 326]]", "[[Github Prototyping 352]]", "[[Github Design 1616]]", "[[Github Prototyping 1704]]"]
 ---
 
 ## Tortenband

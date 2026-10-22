@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 322]]", "[[Github Prototyping 300]]", "[[Github Prototyping 120]]"]
+---
+
 → https://www.marcelpaa.com/rezepte/vollkorn-batard-brot/
 → **Video:** https://www.youtube.com/watch?v=aaQefyuQcPM
 ## Ingredients:

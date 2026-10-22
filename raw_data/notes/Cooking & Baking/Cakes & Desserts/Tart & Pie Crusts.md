@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 160]]", "[[Github Prototyping 2010]]", "[[Github Prototyping 2022]]", "[[Github Prototyping 1551]]", "[[Github Prototyping 2079]]"]
+---
+
 - **Pâte Brisée** for savoury dishes like quiche
 - **Pâte a Foncer** (sweet shortcrust that are NOT blind baked) for tarts with fruit that can be cooked in the oven, like an apple tart
 - **Pâte Sucrée** (sweet shortcrust that IS blind baked) 

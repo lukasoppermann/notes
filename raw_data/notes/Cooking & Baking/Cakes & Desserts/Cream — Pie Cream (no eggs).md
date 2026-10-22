@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 275]]"]
+---
+
 
 Percentage of the whole
 - Milk 83%

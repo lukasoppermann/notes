@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 322]]", "[[Github Prototyping 300]]"]
+---
+
 - 1 Blindbaked tart shell
 - Cover inside of tart shell with [tempered white chocolate](obsidian://open?vault=obsidian&file=documents%2FPersonal%2FCooking%20%26%20Baking%2FCakes%2FChocolate#**White**)
 

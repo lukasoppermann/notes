@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 120]]"]
+---
+
   ### Zutaten (für eine Person)
 - 100g trockene Kichererbsen über nacht eingelegt und dann gekocht, oder aus der Dose Kichererbsen (abgetropft ca. 120 g)
 - 3 Knoblauchzehen

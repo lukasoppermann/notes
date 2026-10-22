@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 1789]]", "[[Github Prototyping 322]]", "[[Github Prototyping 300]]", "[[Github Prototyping 1791]]"]
+---
+
 ## VLT
 High VLT is goof for cloudy or bad weather (~40%), low VLT is good for sun.
 ![](/images/CleanShot%202025-01-12%20at%2018.12.10@2x.png)

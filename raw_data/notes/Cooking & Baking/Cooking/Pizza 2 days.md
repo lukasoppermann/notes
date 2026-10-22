@@ -1,3 +1,7 @@
+---
+related: ["[[Github Prototyping 120]]"]
+---
+
 # Pizza a la Tony
 
 **For 3 Pizzas**
